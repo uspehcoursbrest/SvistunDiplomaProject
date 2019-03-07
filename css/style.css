@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
     font-family: "Montserrat";
 }
@@ -24,3 +24,1063 @@ ul {
     padding: 0;
 }
 
+.topline {
+    height: 110px;
+}
+
+.logo .text span:first-child {
+    font-size: 50.16px;
+    line-height: 21.5px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    color: #202b2f;
+}
+
+.logo .text span:last-child{
+    font-size: 12.18px;
+    line-height: 21.5px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.35em;
+    color: #202b2f;
+}
+
+.logo+span {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: right center;
+}
+
+header .subscribe .btnColor1 {
+    font-size: 12px;
+    line-height: 83.73px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #3c9ef1;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+header .subscribe .btnColor2 {
+    font-size: 12px;
+    line-height: 83.73px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #44d29d;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.languages {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .social a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ebf2f6;
+}
+
+header .date .clock {
+    font-size: 33px;
+    line-height: 17.24px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #000;
+}
+
+header .day span:first-child {
+    font-size: 13px;
+    line-height: 14.43px;
+    color: #202b2f;
+}
+
+header .day span:last-child {
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+header .menu {
+    background-color: #202b2f;
+    height: 55px;
+}
+header .menu a {
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.menu .home  {
+    color: #1fe096;
+}
+
+.start {
+    height: 1335px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.start .caption span {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.start .caption p {
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: right;
+}
+
+.getStarted .textBlockLight {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: right;
+}
+
+.getStarted .btnGrad1 {
+    font-size: 17px;
+    line-height: 83.73px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.start .currency .text span:first-child {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.024em;
+    font-weight: 500;
+    color: #202b2f;
+}
+
+.start .currency .text span:nth-child(2) {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.start .currency .text span:last-child {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #19cf8b;
+}
+
+.start .list li span:nth-child(2){
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.024em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.start .advantages .textBlockLight {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.start .advantages .textBlockLight span{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.graph {
+    width: 614px;
+    height: 392PX;
+}
+
+.aboutCompany {
+    height: 790px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.aboutCompany .left .captionLight {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+}
+
+.address span {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.address a {
+    text-decoration: none;
+}
+
+.aboutCompany .right p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.aboutCompany .right a {
+    font-size: 17px;
+    line-height: 83.73px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.aboutCompany .right .btnColor1 {
+    background-color: #03a3f4;
+}
+
+.aboutCompany .right .btnColor2 {
+    background-color: #44d29d;
+}
+
+.aboutCompany img {
+    width: 218px;
+    height: 306px;
+}
+
+.plans {
+    height: 900px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.plans .captionDark {
+    font-size: 30px;
+    line-height: 83.73px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202b2f;
+    text-align: center;
+}
+
+.plans .textBlockDark {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+    text-align: center;
+}
+
+.plans .item .captionLight {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.plans .item .big {
+    font-size: 90px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.plans .item span:nth-child(3) {
+    font-size: 17px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.plans .item a {
+    font-size: 15px;
+    line-height: 83.73px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.plans .item .btnColor1 {
+    background-color: #3c9ef1;
+}
+
+.plans .item .btnColor2 {
+    background-color: #44d29d;
+}
+
+.plans .tarifplan1 .block1 span:first-child {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.plans .tarifplan1 .block1 span:last-child {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3c9ef1;
+}
+
+.plans .block2 {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.plans .tarifplan2 .block1 span:first-child {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.plans .tarifplan2 .block1 span:last-child {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #44d29d;
+}
+
+.profit {
+    background-color: #06aae9;
+    height: 180px;
+}
+
+.profit .inputBlockType1 label {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.profit .inputBlockType1 input {
+    background-color: #59c9ec;
+}
+
+.profit .plan label {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.profit .plan select {
+    font-size: 15px;
+    line-height: 24px;
+    background-color: #5bcde6;
+}
+
+.profit .sum span:first-child {
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.profit .sum span:last-child {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.profit .btnColor3 {
+    font-size: 15px;
+    line-height: 83.73px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #202b2f;
+}
+
+.referral {
+    height: 1540px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.referral .captionDark {
+    font-size: 30px;
+    line-height: 83.73px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202b2f;
+    text-align: center;
+}
+
+.referral .img .percent {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.referral .left span:first-child {
+    background-color: #03a3f4;
+}
+
+.referral .img .number {
+    font-size: 121px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
+.referral .left span:nth-child(2) {
+    color: #03a3f4;
+}
+
+.referral .img .text {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.referral .left span:last-child {
+    color: #03a3f4;
+}
+
+.referral .right span:first-child {
+    background-color: #44d29d;
+}
+
+.referral .right span:nth-child(2) {
+    color: #44d29d;
+}
+
+.referral .right span:last-child {
+        color: #44d29d;
+}
+
+.referral .textBlockDark {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+    text-align: center;
+}
+
+.referral a {
+    font-size: 17px;
+    line-height: 83.53px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #03a3f4;
+    text-decoration: none;
+    text-align: center;
+}
+
+.referral .point span:nth-child(2) {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.referral .point span:last-child {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.referral .table li span:first-child {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    color: #202b2f;
+}
+
+.referral .table li span:nth-child(2) {
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.referral .table li span:nth-child(3) {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.referral .lefttable li span:nth-child(3) {
+    color: #3c9ef1;
+}
+
+.referral .righttable li span:nth-child(3) {
+    color: #44d29d;
+}
+
+.referral .table+span {
+    font-size: 17px;
+    line-height: 83.73px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.referral .lefttable>span {
+    background-color: #04a4f2;
+}
+
+.referral .righttable>span {
+    background-color: #44d29d;
+}
+
+.referral [class^="icon"] {
+    background-color: #5fd4db;
+}
+
+.referral .table li span:last-child {
+    background-repeat: no-repeat;
+}
+
+.advantages {
+    height: 985px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.advantages [class^="icon"] {
+    background-color: #57c5f2;
+}
+
+.advantages .captionLight {
+    font-size: 30px;
+    line-height: 83.73px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+.advantages .item span:nth-child(2) {
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.advantages .item p {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #d4dbde;
+}
+
+.news {
+    height: 905px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.news .captionDark {
+    font-size: 30px;
+    line-height: 83.73px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #202b2f;
+    text-align: center;
+}
+
+.news .item span:nth-child(2) {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #03a3f4;
+}
+
+.news .item span:nth-child(3) {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.news .item p {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.news .item a {
+    font-size: 15px;
+    line-height: 83.73px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #02a0f9;
+    text-decoration: none;
+}
+
+.news img {
+    width: 300px;
+    height: 215px;
+}
+.payments {
+    background-color: #c9d3db;
+    height: 140px;
+}
+
+footer {
+    background-color: #202b2f;
+    height: 325px;
+}
+
+footer .logo span:first-child {
+    font-size: 50.16px;
+    line-height: 21.5px;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+    font-style: italic;
+    color: #ffffff;
+}
+
+footer .logo span:last-child {
+    font-size: 12.18px;
+    line-height: 21.5px;
+    letter-spacing: 0.35em;
+    font-weight: 500;
+    font-style: italic;
+    color: #ffffff;
+}
+
+footer .widgets a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4b5559;
+}
+footer .copyrights {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+footer ul li::before {
+    color: #1fe096;
+    content: "∙";
+}
+footer ul a {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+footer .address span {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1fe096;
+}
+
+footer .address a {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .mail span {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1fe096;
+}
+
+footer .mail a {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #06a9eb;
+}
+
+header .user .text span:first-child {
+    font-size: 14px;
+    line-height: 17px;
+    color: #202b2f;
+}
+
+header .user .text span:last-child {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #202b2f;
+}
+
+header .btnColor1 {
+    font-size: 12px;
+    line-height: 83.73px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3c9ef1;
+}
+
+header .wrapper {
+    height: 590px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.userInfo .info .title  {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.userInfo .info .text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.userInfo [class^="icon"] {
+    color: #ffffff;
+}
+
+.userInfo .link2 {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.userInfo .balance span:nth-child(2) {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.userInfo .balance span:nth-child(3) {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #ffffff;
+}
+.userInfo .btns a {
+    font-size: 15px;
+    line-height: 83.73px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.userInfo .btns .btnColor1 {
+    background-color: #38a4ff;
+}
+
+.userInfo .btns .btnColor2 {
+    background-color: #1ede99;
+}
+
+.navigation span {
+    font-size: 15px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+
+.navigation .ref span{
+    color: #3c9ef1;
+}
+
+header .deposit .title {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.content {
+    height: 2306px;
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+header .deposit .text{
+    font-weight: 700;
+}
+
+header .deposit a {
+    font-size: 15px;
+    line-height: 83.73px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #019efc;
+}
+
+.content>span {
+    font-size: 30px;
+    line-height: 83.73px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+
+.content .upline .captionDark {
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+
+.content .upline p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: #04a4f2;
+}
+
+.content .records span:first-child {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.content .records span:last-child {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.content .comission {
+    background-color: #38a4ff;
+}
+
+.content .referrals {
+    background-color: #11c0c5;
+}
+
+.content .activeRef {
+    background-color: #44d29d;
+}
+
+.content .refSignup {
+    font-size: 20px;
+    line-height: 83.73px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+
+.content form label {
+    font-size: 15px;
+    line-height: 100px;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.content form option {
+    font-size: 13px;
+    line-height: 100px;
+    color: #202b2f;
+}
+
+.content .dateRef {
+    background-color: #ffffff;
+}
+
+.content select {
+    background-color: #e6edf4;
+}
+
+.content .table1 li:first-child {
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #3c9ef1;
+}
+
+.content .table1 .date {
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.content .table1 .text {
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #5eacf3;
+}
+
+.content .yourRef {
+    font-size: 20px;
+    line-height: 83.73px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #202b2f;
+}
+
+.content .table2 .title {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
+
+.content .table2 .name {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #202b2f;
+}
+
+.content .table2 li {
+    background-color: #ffffff;
+}
+.content .table2 .textBlockDark {
+    background-color: #c9d3db;
+}
+
+.content .table2 .text span:first-child {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.content .table2 .text span:last-child {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.content .table2 li div:nth-child(3) {
+    background-color: #3c9ef1;
+}
+
+.content .table2 li div:nth-child(4) {
+    background-color: #44d29d;
+}
+
+.content .table2 p {
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+    background-color: #e6edf4;
+}
+
+.slider {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: #202b2f;
+    background-color: #ffffff;
+}
+
+.slider li:nth-child(3) {
+    color: #ffffff;
+    background-color: #1edf98;
+}
+
+.content .copyrights {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    color: #202b2f;
+}
