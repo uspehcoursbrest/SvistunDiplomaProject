@@ -216,6 +216,11 @@ header .menu a {
 .graph {
     width: 614px;
     height: 392PX;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center;
 }
 
 .aboutCompany {
@@ -686,9 +691,14 @@ header .menu a {
     text-decoration: none;
 }
 
-.news img {
+.news .img {
     width: 300px;
     height: 215px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center;
 }
 .payments {
     background-color: #c9d3db;
