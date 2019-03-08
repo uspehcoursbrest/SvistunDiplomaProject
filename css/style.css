@@ -46,7 +46,10 @@ ul {
     color: #202b2f;
 }
 
-.logo+span {
+.logo .img {
+    width: 95px;
+    height: 46px;
+    display: inline-block;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -73,7 +76,9 @@ header .subscribe .btnColor2 {
     color: #ffffff;
 }
 
-.languages {
+.languages .img {
+    width: 15px;
+    height: 15px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -583,6 +588,16 @@ header .menu a {
     background-repeat: no-repeat;
 }
 
+.referral .table .img {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: right center;
+}
+
 .advantages {
     height: 985px;
     background-position: 50% 50%;
@@ -793,6 +808,16 @@ header .wrapper {
     background-size: cover;
 }
 
+header .user {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center;
+}
+
 .userInfo .info .title  {
     font-size: 15px;
     line-height: 22px;
@@ -852,6 +877,16 @@ header .wrapper {
     background-color: #1ede99;
 }
 
+.userInfo .img {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center;
+}
+
 .navigation span {
     font-size: 15px;
     line-height: 60px;
@@ -894,6 +929,16 @@ header .deposit a {
     background-color: #019efc;
 }
 
+.content .deposir .img {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:left center;
+}
+
 .content>span {
     font-size: 30px;
     line-height: 83.73px;
@@ -918,6 +963,16 @@ header .deposit a {
     letter-spacing: 0.02em;
     font-weight: 600;
     color: #04a4f2;
+}
+
+.content .upline .img {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center;
 }
 
 .content .records span:first-child {
@@ -1064,6 +1119,16 @@ header .deposit a {
     background-color: #e6edf4;
 }
 
+.content. .table .img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center;
+}
+
 .slider {
     font-size: 17px;
     line-height: 24px;
@@ -1076,6 +1141,16 @@ header .deposit a {
 .slider li:nth-child(3) {
     color: #ffffff;
     background-color: #1edf98;
+}
+
+.slider .img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position:center;
 }
 
 .content .copyrights {
