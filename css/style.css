@@ -1158,8 +1158,6 @@ header .deposit a {
     height: 50px;
     display: inline-block;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
     background-position:center;
 }
 
