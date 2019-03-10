@@ -24,10 +24,6 @@ ul {
     padding: 0;
 }
 
-.topline {
-    height: 110px;
-}
-
 .logo .text span:first-child {
     font-size: 50.16px;
     line-height: 21.5px;
@@ -37,7 +33,7 @@ ul {
     color: #202b2f;
 }
 
-.logo .text span:last-child{
+.logo .text span:last-child {
     font-size: 12.18px;
     line-height: 21.5px;
     font-weight: 500;
@@ -85,6 +81,8 @@ header .subscribe .btnColor2 {
 }
 
 header .social a {
+    width: 16px;
+    height: 16px;
     text-decoration: none;
     color: #000000;
     background-color: #ebf2f6;
@@ -111,10 +109,11 @@ header .day span:last-child {
     letter-spacing: 0.025em;
     color: #202b2f;
 }
+
 header .menu {
     background-color: #202b2f;
-    height: 55px;
 }
+
 header .menu a {
     font-size: 15px;
     line-height: 60px;
@@ -124,16 +123,16 @@ header .menu a {
     color: #ffffff;
 }
 
-.menu .home  {
+.menu .home {
     color: #1fe096;
 }
 
 .start {
-    height: 1335px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
 }
+
 .start .caption span {
     font-size: 60px;
     line-height: 60px;
@@ -168,6 +167,11 @@ header .menu a {
     letter-spacing: 0.05em;
     color: #ffffff;
     text-decoration: none;
+    background-color: #02a0f9;
+}
+
+.start .currency {
+    background-color: #ffffff;
 }
 
 .start .currency .text span:first-child {
@@ -192,13 +196,26 @@ header .menu a {
     color: #19cf8b;
 }
 
-.start .list li span:nth-child(2){
+.start .currency span[class^="icon"] {
+    width: 42px;
+    height: 41px;
+    color: #000000;
+}
+
+.start .list li span:nth-child(2) {
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
     letter-spacing: 0.024em;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.start .list li span:first-child {
+    width: 41px;
+    height: 40px;
+    color: #000000;
+    background-color: #57c5f2;
 }
 
 .start .advantages .textBlockLight {
@@ -208,23 +225,21 @@ header .menu a {
     color: #ffffff;
 }
 
-.start .advantages .textBlockLight span{
+.start .advantages .textBlockLight span {
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.graph {
+.graph .img {
     width: 614px;
     height: 392PX;
     display: inline-block;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position:center;
 }
 
 .aboutCompany {
-    height: 790px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
@@ -249,6 +264,9 @@ header .menu a {
 
 .address a {
     text-decoration: none;
+    width: 49px;
+    height: 62px;
+    color: #ffffff;
 }
 
 .aboutCompany .right p {
@@ -282,10 +300,24 @@ header .menu a {
 }
 
 .plans {
-    height: 900px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+.plans div[class^="plan"] {
+    display: inline-block;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.plans .plan1 {
+    background-position: left center;
+}
+
+.plans .plan2 {
+    background-position: right center;
 }
 
 .plans .captionDark {
@@ -387,7 +419,6 @@ header .menu a {
 
 .profit {
     background-color: #06aae9;
-    height: 180px;
 }
 
 .profit .inputBlockType1 label {
@@ -440,11 +471,11 @@ header .menu a {
 }
 
 .referral {
-    height: 1540px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
 }
+
 .referral .captionDark {
     font-size: 30px;
     line-height: 83.73px;
@@ -498,7 +529,7 @@ header .menu a {
 }
 
 .referral .right span:last-child {
-        color: #44d29d;
+    color: #44d29d;
 }
 
 .referral .textBlockDark {
@@ -568,7 +599,7 @@ header .menu a {
     color: #44d29d;
 }
 
-.referral .table+span {
+.referral .table + span {
     font-size: 17px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
@@ -577,15 +608,18 @@ header .menu a {
     color: #ffffff;
 }
 
-.referral .lefttable>span {
+.referral .lefttable > span {
     background-color: #04a4f2;
 }
 
-.referral .righttable>span {
+.referral .righttable > span {
     background-color: #44d29d;
 }
 
 .referral [class^="icon"] {
+    width: 42px;
+    height: 42px;
+    color: #000000;
     background-color: #5fd4db;
 }
 
@@ -596,6 +630,7 @@ header .menu a {
 .referral .table .img {
     width: 21px;
     height: 21px;
+    color: #000000;
     display: inline-block;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -604,14 +639,15 @@ header .menu a {
 }
 
 .advantages {
-    height: 985px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
-.advantages [class^="icon"] {
-    background-color: #57c5f2;
+.advantages span[class^="icon"] {
+    width: 58px;
+    height: 56px;
+    color: #02a0f9;
 }
 
 .advantages .captionLight {
@@ -641,7 +677,6 @@ header .menu a {
 }
 
 .news {
-    height: 905px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
@@ -698,16 +733,15 @@ header .menu a {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position:center;
+    background-position: center;
 }
+
 .payments {
     background-color: #c9d3db;
-    height: 140px;
 }
 
 footer {
     background-color: #202b2f;
-    height: 325px;
 }
 
 footer .logo span:first-child {
@@ -729,10 +763,13 @@ footer .logo span:last-child {
 }
 
 footer .widgets a {
+    width: 16px;
+    height: 16px;
     text-decoration: none;
     color: #ffffff;
     background-color: #4b5559;
 }
+
 footer .copyrights {
     font-size: 15px;
     line-height: 24px;
@@ -744,6 +781,7 @@ footer ul li::before {
     color: #1fe096;
     content: "∙";
 }
+
 footer ul a {
     font-size: 15px;
     line-height: 40px;
@@ -752,7 +790,6 @@ footer ul a {
     color: #ffffff;
     text-decoration: none;
 }
-
 
 
 footer .address span {
@@ -788,6 +825,14 @@ footer .mail a {
     color: #06a9eb;
 }
 
+header .user .img {
+    width: 108px;
+    height: 77px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 header .user .text span:first-child {
     font-size: 14px;
     line-height: 17px;
@@ -812,23 +857,12 @@ header .btnColor1 {
 }
 
 header .wrapper {
-    height: 590px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
-header .user {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:center;
-}
-
-.userInfo .info .title  {
+.userInfo .info .title {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.025em;
@@ -844,6 +878,11 @@ header .user {
 }
 
 .userInfo [class^="icon"] {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #ffffff;
 }
 
@@ -854,6 +893,17 @@ header .user {
     font-weight: 700;
     color: #ffffff;
 }
+
+.userInfo .balance span:first-child {
+    width: 62px;
+    height: 62px;
+    color: #3bbbea;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+}
+
 
 .userInfo .balance span:nth-child(2) {
     font-size: 15px;
@@ -870,6 +920,7 @@ header .user {
     font-weight: 700;
     color: #ffffff;
 }
+
 .userInfo .btns a {
     font-size: 15px;
     line-height: 83.73px;
@@ -892,12 +943,13 @@ header .user {
     height: 90px;
     display: inline-block;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:center;
+    background-position: center;
+    background-color: #3bbbea;
 }
 
-.navigation span {
+.navigation span {display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
     font-size: 15px;
     line-height: 60px;
     letter-spacing: 0.02em;
@@ -906,7 +958,17 @@ header .user {
     color: #202b2f;
 }
 
-.navigation .ref span{
+.navigation span[class^="icon"] {
+    width: 32px;
+    height: 32px;
+    color: #000000;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.navigation .ref span {
     color: #3c9ef1;
 }
 
@@ -917,14 +979,22 @@ header .deposit .title {
     color: #202b2f;
 }
 
+header .deposit .img {
+    width: 27px;
+    height: 27px;
+    color: #ffffff;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .content {
-    height: 2306px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
-header .deposit .text{
+header .deposit .text {
     font-weight: 700;
 }
 
@@ -946,10 +1016,10 @@ header .deposit a {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position:left center;
+    background-position: left center;
 }
 
-.content>span {
+.content > span {
     font-size: 30px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
@@ -980,9 +1050,8 @@ header .deposit a {
     height: 90px;
     display: inline-block;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:center;
+    background-position: center;
+    background-color: #ffffff;
 }
 
 .content .records span:first-child {
@@ -1094,6 +1163,7 @@ header .deposit a {
 .content .table2 li {
     background-color: #ffffff;
 }
+
 .content .table2 .textBlockDark {
     background-color: #c9d3db;
 }
@@ -1129,14 +1199,13 @@ header .deposit a {
     background-color: #e6edf4;
 }
 
-.content. .table .img {
+.content .table .img {
     width: 50px;
     height: 50px;
+    color: #ffffff;
     display: inline-block;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:center;
+    background-position: center;
 }
 
 .slider {
@@ -1158,7 +1227,8 @@ header .deposit a {
     height: 50px;
     display: inline-block;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
+    background-color: #c9d3db;
 }
 
 .content .copyrights {
