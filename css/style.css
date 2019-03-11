@@ -81,8 +81,7 @@ header .subscribe .btnColor2 {
 }
 
 header .social a {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
     text-decoration: none;
     color: #000000;
     background-color: #ebf2f6;
@@ -197,8 +196,7 @@ header .menu a {
 }
 
 .start .currency span[class^="icon"] {
-    width: 42px;
-    height: 41px;
+    font-size: 3em;
     color: #000000;
 }
 
@@ -212,8 +210,7 @@ header .menu a {
 }
 
 .start .list li span:first-child {
-    width: 41px;
-    height: 40px;
+    font-size: 3em;
     color: #000000;
     background-color: #57c5f2;
 }
@@ -264,8 +261,7 @@ header .menu a {
 
 .address a {
     text-decoration: none;
-    width: 49px;
-    height: 62px;
+    font-size: 3em;
     color: #ffffff;
 }
 
@@ -617,8 +613,7 @@ header .menu a {
 }
 
 .referral [class^="icon"] {
-    width: 42px;
-    height: 42px;
+    font-size: 3em;
     color: #000000;
     background-color: #5fd4db;
 }
@@ -633,8 +628,6 @@ header .menu a {
     color: #000000;
     display: inline-block;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
     background-position: right center;
 }
 
@@ -645,8 +638,7 @@ header .menu a {
 }
 
 .advantages span[class^="icon"] {
-    width: 58px;
-    height: 56px;
+    font-size: 3em;
     color: #02a0f9;
 }
 
@@ -763,8 +755,7 @@ footer .logo span:last-child {
 }
 
 footer .widgets a {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
     text-decoration: none;
     color: #ffffff;
     background-color: #4b5559;
@@ -878,8 +869,7 @@ header .wrapper {
 }
 
 .userInfo [class^="icon"] {
-    width: 33px;
-    height: 33px;
+    font-size: 2em;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -895,8 +885,7 @@ header .wrapper {
 }
 
 .userInfo .balance span:first-child {
-    width: 62px;
-    height: 62px;
+    font-size: 4em;
     color: #3bbbea;
     display: inline-block;
     background-repeat: no-repeat;
@@ -959,8 +948,7 @@ header .wrapper {
 }
 
 .navigation span[class^="icon"] {
-    width: 32px;
-    height: 32px;
+    font-size: 2em;
     color: #000000;
     display: inline-block;
     background-repeat: no-repeat;
