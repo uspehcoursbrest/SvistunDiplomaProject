@@ -24,6 +24,12 @@ ul {
     padding: 0;
 }
 
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .logo .text span:first-child {
     font-size: 50.16px;
     line-height: 21.5px;
@@ -120,6 +126,11 @@ header .menu a {
     text-decoration: none;
     letter-spacing: 0.02em;
     color: #ffffff;
+    display: inline-block;
+}
+
+header .menu a + a {
+    margin-left: 30px;
 }
 
 .menu .home {
@@ -240,6 +251,14 @@ header .menu a {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    margin: 0 -25px;
+}
+
+.aboutCompany .left,
+.aboutCompany .right {
+    width: 50%;
+    float: left;
+    padding: 0 25px;
 }
 
 .aboutCompany .left .captionLight {
@@ -306,14 +325,28 @@ header .menu a {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    width: 50%;
+    float: left;
+    padding: 0 30px;
+}
+
+.plans .wrapper {
+    margin: 0 -30px;
 }
 
 .plans .plan1 {
-    background-position: left center;
+    margin: 0 -60px;
+}
+
+.plans .item,
+.plans div[class^="tarif"] {
+    width: 50%;
+    float: left;
+    padding: 0 60px;
 }
 
 .plans .plan2 {
-    background-position: right center;
+    margin: 0 -60px;
 }
 
 .plans .captionDark {
@@ -428,6 +461,19 @@ header .menu a {
     background-color: #59c9ec;
 }
 
+.profit .amount,
+.profit .plan,
+.profit .sum,
+.profit a {
+    display: inline-block;
+}
+
+.profit .plan,
+.profit .sum,
+.profit a {
+    margin-left: 60px;
+}
+
 .profit .plan label {
     font-size: 15px;
     line-height: 24px;
@@ -470,6 +516,15 @@ header .menu a {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+.referral . img .left,
+.referral .img .right {
+    display: inline-block;
+}
+
+.referral .img .right {
+    margin-left: 450px;
 }
 
 .referral .captionDark {
@@ -546,6 +601,26 @@ header .menu a {
     background-color: #03a3f4;
     text-decoration: none;
     text-align: center;
+}
+
+.referral .point {
+    width: 20%;
+    float: left;
+    padding: 0 100px;
+}
+
+.referral ul.clear {
+    margin: 0 -100px;
+}
+
+.referral div[class*="table"] {
+    width: 50%;
+    float: left;
+    padding: 0 30px;
+}
+
+.referral div[class*="clear"] {
+    margin: 0 -30px;
 }
 
 .referral .point span:nth-child(2) {
@@ -668,6 +743,16 @@ header .menu a {
     color: #d4dbde;
 }
 
+.advantages .item {
+    width: 33.3333%;
+    float: left;
+    padding: 0 70px;
+}
+
+.advantages .clear {
+    margin: 0 -70px;
+}
+
 .news {
     background-position: 50% 50%;
     -webkit-background-size: cover;
@@ -728,6 +813,16 @@ header .menu a {
     background-position: center;
 }
 
+.news .item {
+    width: 33.3333%;
+    float: left;
+    padding: 0 30px;
+}
+
+.news .wrapper {
+    margin: 0 -30px;
+}
+
 .payments {
     background-color: #c9d3db;
 }
@@ -736,7 +831,15 @@ footer {
     background-color: #202b2f;
 }
 
-footer .logo span:first-child {
+footer .wrapper .item {
+    display: inline-block;
+}
+
+footer .wrapper .item + .item {
+    margin-left: 60px;
+}
+
+footer .logo .text span:first-child {
     font-size: 50.16px;
     line-height: 21.5px;
     letter-spacing: 0.05em;
@@ -745,7 +848,7 @@ footer .logo span:first-child {
     color: #ffffff;
 }
 
-footer .logo span:last-child {
+footer .logo .text span:last-child {
     font-size: 12.18px;
     line-height: 21.5px;
     letter-spacing: 0.35em;
@@ -768,12 +871,12 @@ footer .copyrights {
     color: #ffffff;
 }
 
-footer ul li::before {
+footer ul.menu li::before {
     color: #1fe096;
     content: "∙";
 }
 
-footer ul a {
+footer .menu a {
     font-size: 15px;
     line-height: 40px;
     letter-spacing: 0.02em;
@@ -936,7 +1039,21 @@ header .wrapper {
     background-color: #3bbbea;
 }
 
-.navigation span {display: inline-block;
+.userInfo .img,
+.userInfo .info,
+.userInfo .balance,
+.userInfo .btns {
+    display: inline-block;
+}
+
+.userInfo .info,
+.userInfo .balance,
+.userInfo .btns {
+    margin-left: 40px;
+}
+
+.navigation span {
+    display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
     font-size: 15px;
@@ -974,6 +1091,18 @@ header .deposit .img {
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+header .navigation {
+    width: 33.3333%;
+    float: left;
+    padding: 0 45px;
+}
+
+header .deposit {
+    width: 66.6666%;
+    float: left;
+    padding: 0 45px;
 }
 
 .content {
@@ -1057,6 +1186,14 @@ header .deposit a {
     color: #ffffff;
 }
 
+.content .records .point{
+    display: inline-block;
+}
+
+.content .records .point + .point {
+    margin-left: 30px;
+}
+
 .content .comission {
     background-color: #38a4ff;
 }
@@ -1078,6 +1215,14 @@ header .deposit a {
     color: #202b2f;
 }
 
+.content form {
+    display: inline-block;
+}
+
+.content form + form {
+    margin-left: 35px;
+}
+
 .content form label {
     font-size: 15px;
     line-height: 100px;
@@ -1097,6 +1242,16 @@ header .deposit a {
 
 .content select {
     background-color: #e6edf4;
+}
+
+.content .table1 li span {
+    width: 33.3333%;
+    float: left;
+    padding: 0 100px;
+}
+
+.content .table1 li {
+    margin: 0 -100px;
 }
 
 .content .table1 li:first-child {
@@ -1131,6 +1286,14 @@ header .deposit a {
     font-weight: 700;
     text-transform: uppercase;
     color: #202b2f;
+}
+
+.content .table2 li .point{
+    display: inline-block;
+}
+
+.content .table2 li .point +.point{
+    margin-left: 20px;
 }
 
 .content .table2 .title {
@@ -1203,6 +1366,14 @@ header .deposit a {
     font-weight: 700;
     color: #202b2f;
     background-color: #ffffff;
+}
+
+.slider li {
+    display: inline-block;
+}
+
+.slider li + li {
+    margin-left: 20px;
 }
 
 .slider li:nth-child(3) {
