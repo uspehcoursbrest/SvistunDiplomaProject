@@ -261,6 +261,10 @@ header .menu a + a {
     padding: 0 25px;
 }
 
+.aboutCompany {
+    margin: 0 -25px;
+}
+
 .aboutCompany .left .captionLight {
     font-size: 30px;
     line-height: 30px;
@@ -321,7 +325,6 @@ header .menu a + a {
 }
 
 .plans div[class^="plan"] {
-    display: inline-block;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -746,11 +749,11 @@ header .menu a + a {
 .advantages .item {
     width: 33.3333%;
     float: left;
-    padding: 0 70px;
+    padding: 0 20px;
 }
 
-.advantages .clear {
-    margin: 0 -70px;
+.advantages .wrapper {
+    margin: 0 -20px;
 }
 
 .news {
