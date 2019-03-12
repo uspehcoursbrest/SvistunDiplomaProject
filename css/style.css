@@ -345,11 +345,11 @@ header .menu a + a {
 .plans div[class^="tarif"] {
     width: 50%;
     float: left;
-    padding: 0 60px;
+    padding: 0 30px;
 }
 
 .plans .plan2 {
-    margin: 0 -60px;
+    margin: 0 -30px;
 }
 
 .plans .captionDark {
@@ -616,14 +616,15 @@ header .menu a + a {
     margin: 0 -100px;
 }
 
-.referral div[class*="table"] {
+.referral .lefttable,
+.referral .righttable {
     width: 50%;
     float: left;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
-.referral div[class*="clear"] {
-    margin: 0 -30px;
+.referral .clear{
+    margin: 0 -15px;
 }
 
 .referral .point span:nth-child(2) {
@@ -749,11 +750,11 @@ header .menu a + a {
 .advantages .item {
     width: 33.3333%;
     float: left;
-    padding: 0 20px;
+    padding: 0 35px;
 }
 
 .advantages .wrapper {
-    margin: 0 -20px;
+    margin: 0 -35px;
 }
 
 .news {
@@ -819,11 +820,11 @@ header .menu a + a {
 .news .item {
     width: 33.3333%;
     float: left;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .news .wrapper {
-    margin: 0 -30px;
+    margin: 0 -15px;
 }
 
 .payments {
@@ -1099,13 +1100,17 @@ header .deposit .img {
 header .navigation {
     width: 33.3333%;
     float: left;
-    padding: 0 45px;
+    padding: 0 20px;
 }
 
 header .deposit {
     width: 66.6666%;
     float: left;
-    padding: 0 45px;
+    padding: 0 20px;
+}
+
+header .wrapper{
+    margin: 0 -20px;
 }
 
 .content {
@@ -1250,11 +1255,11 @@ header .deposit a {
 .content .table1 li span {
     width: 33.3333%;
     float: left;
-    padding: 0 100px;
+    padding: 0 200px;
 }
 
 .content .table1 li {
-    margin: 0 -100px;
+    margin: 0 -200px;
 }
 
 .content .table1 li:first-child {
