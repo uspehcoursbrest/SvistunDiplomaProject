@@ -65,6 +65,7 @@ header .subscribe .btnColor1 {
     text-decoration: none;
     background-color: #3c9ef1;
     letter-spacing: 0.025em;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
@@ -75,6 +76,7 @@ header .subscribe .btnColor2 {
     text-decoration: none;
     background-color: #44d29d;
     letter-spacing: 0.025em;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
