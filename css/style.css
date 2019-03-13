@@ -51,33 +51,29 @@ ul {
 .logo .img {
     width: 95px;
     height: 46px;
+    background-position: right;
     display: inline-block;
+    padding-right: 100px;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: right center;
+}
+
+header .subscribe [class^="btn"] {
+    font-size: 12px;
+    line-height: 83.73px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 35px;
 }
 
 header .subscribe .btnColor1 {
-    font-size: 12px;
-    line-height: 83.73px;
-    font-weight: 700;
-    text-decoration: none;
     background-color: #3c9ef1;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 
 header .subscribe .btnColor2 {
-    font-size: 12px;
-    line-height: 83.73px;
-    font-weight: 700;
-    text-decoration: none;
     background-color: #44d29d;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
 }
 
 .languages .img {
@@ -132,8 +128,10 @@ header .menu a {
 }
 
 header .menu a + a {
-    margin-left: 60px;
+    margin-left: 62px;
 }
+
+/*main*/
 
 .menu .home {
     color: #1fe096;
@@ -152,7 +150,8 @@ header .menu a + a {
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: #ffffff;
-    text-align: center;
+    display: block;
+    text-align: right;
 }
 
 .start .caption p {
@@ -180,10 +179,14 @@ header .menu a + a {
     color: #ffffff;
     text-decoration: none;
     background-color: #02a0f9;
+    display: table;
+    margin-left: auto;
 }
 
 .start .currency {
     background-color: #ffffff;
+    display: table;
+    margin-left: auto;
 }
 
 .start .currency .text span:first-child {
@@ -211,6 +214,11 @@ header .menu a + a {
 .start .currency span[class^="icon"] {
     font-size: 3em;
     color: #000000;
+}
+
+.start .advantages {
+    display: table;
+    margin-right: auto;
 }
 
 .start .list li span:nth-child(2) {
@@ -256,10 +264,15 @@ header .menu a + a {
     margin: 0 -25px;
 }
 
-.aboutCompany .left,
-.aboutCompany .right {
+.aboutCompany .left {
     width: 50%;
     float: left;
+    padding: 0 25px;
+}
+
+.aboutCompany .right {
+    width: 50%;
+    float: right;
     padding: 0 25px;
 }
 
@@ -305,6 +318,7 @@ header .menu a + a {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
+    padding: 25px 40px;
 }
 
 .aboutCompany .right .btnColor1 {
@@ -324,6 +338,18 @@ header .menu a + a {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+.plan1 .item {
+    background-color: #3c9ef1;
+}
+
+.plan2 .item {
+    background-color: #44d29d;
+}
+
+.plans [class^="tarif"] {
+    background-color: #ffffff; 
 }
 
 .plans div[class^="plan"] {
@@ -361,6 +387,7 @@ header .menu a + a {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #202b2f;
+    display: block;
     text-align: center;
 }
 
@@ -404,6 +431,8 @@ header .menu a + a {
     letter-spacing: 0.05em;
     color: #ffffff;
     text-decoration: none;
+    padding: 20px 40px;
+    display: block;
 }
 
 .plans .item .btnColor1 {
@@ -414,18 +443,22 @@ header .menu a + a {
     background-color: #44d29d;
 }
 
-.plans .tarifplan1 .block1 span:first-child {
+.plans [class^="tarif"] .block1 span:first-child {
     font-size: 15px;
     line-height: 24px;
     font-weight: 700;
     color: #202b2f;
 }
 
-.plans .tarifplan1 .block1 span:last-child {
+.plans [class^="tarif"] .block1 span:last-child {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
+
+}
+
+.plans .tarifplan1 .block1 span:last-child {
     color: #3c9ef1;
 }
 
@@ -436,18 +469,7 @@ header .menu a + a {
     color: #202b2f;
 }
 
-.plans .tarifplan2 .block1 span:first-child {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #202b2f;
-}
-
 .plans .tarifplan2 .block1 span:last-child {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
     color: #44d29d;
 }
 
@@ -457,17 +479,17 @@ header .menu a + a {
 
 .profit label {
     display: block;
-}
-
-.profit .inputBlockType1 label {
     font-size: 15px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
 }
 
-.profit .inputBlockType1 input {
-    background-color: #59c9ec;
+.profit input,
+.profit select option{
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
 }
 
 .profit .amount,
@@ -480,20 +502,13 @@ header .menu a + a {
 .profit .plan,
 .profit .sum,
 .profit a {
-    margin-left: 60px;
+    margin-left: 105px;
 }
 
-.profit .plan label {
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.profit .plan select {
-    font-size: 15px;
-    line-height: 24px;
-    background-color: #5bcde6;
+.profit .plan select,
+.profit input {
+    background-color: #5ed3dd;
+    padding: 0 30px;
 }
 
 .profit .sum span:first-child {
@@ -501,7 +516,6 @@ header .menu a + a {
     line-height: 50px;
     font-weight: 700;
     color: #ffffff;
-    display: block;
 }
 
 .profit .sum span:last-child {
@@ -520,6 +534,7 @@ header .menu a + a {
     text-decoration: none;
     color: #ffffff;
     background-color: #202b2f;
+    padding: 0 50px;
 }
 
 .referral {
@@ -544,6 +559,7 @@ header .menu a + a {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #202b2f;
+    display: block;
     text-align: center;
 }
 
@@ -610,17 +626,20 @@ header .menu a + a {
     text-transform: uppercase;
     background-color: #03a3f4;
     text-decoration: none;
+    display: table;
+    margin: auto;
     text-align: center;
+    padding: 0 20px;
 }
 
 .referral .point {
     width: 20%;
     float: left;
-    padding: 0 100px;
+    padding: 0 25px;
 }
 
 .referral ul.clear {
-    margin: 0 -100px;
+    margin: 0 -25px;
 }
 
 .referral .lefttable,
@@ -630,7 +649,7 @@ header .menu a + a {
     padding: 0 15px;
 }
 
-.referral .clear{
+.referral .table.clear{
     margin: 0 -15px;
 }
 
@@ -651,11 +670,16 @@ header .menu a + a {
     color: #202b2f;
 }
 
-.referral span[class*="icon"] {
+.referral .point span {
+    display: block;
     text-align: center;
 }
 
-.referral .table li span:first-child {
+.referral ul.table {
+    background-color: #ffffff;
+}
+
+.referral ul.table li span:first-child {
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.025em;
@@ -663,14 +687,14 @@ header .menu a + a {
     color: #202b2f;
 }
 
-.referral .table li span:nth-child(2) {
+.referral ul.table li span:nth-child(2) {
     font-size: 13px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #202b2f;
 }
 
-.referral .table li span:nth-child(3) {
+.referral ul.table li span:nth-child(3) {
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.025em;
@@ -685,7 +709,7 @@ header .menu a + a {
     color: #44d29d;
 }
 
-.referral .table + span {
+.referral ul.table + span {
     font-size: 17px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
@@ -696,10 +720,14 @@ header .menu a + a {
 
 .referral .lefttable > span {
     background-color: #04a4f2;
+    display: block;
+    text-align: center;
 }
 
 .referral .righttable > span {
     background-color: #44d29d;
+    display: block;
+    text-align: center;
 }
 
 .referral [class^="icon"] {
@@ -708,11 +736,11 @@ header .menu a + a {
     background-color: #5fd4db;
 }
 
-.referral .table li span:last-child {
+.referral ul.table li span:last-child {
     background-repeat: no-repeat;
 }
 
-.referral .table .img {
+.referral ul.table .img {
     width: 21px;
     height: 21px;
     color: #000000;
@@ -727,9 +755,11 @@ header .menu a + a {
     background-size: cover;
 }
 
-.advantages span[class^="icon"] {
+.advantages .item span[class^="icon"] {
     font-size: 3em;
     color: #02a0f9;
+    display: block;
+    text-align: center;
 }
 
 .advantages .captionLight {
@@ -739,6 +769,7 @@ header .menu a + a {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+    display: block;
     text-align: center;
 }
 
@@ -749,6 +780,8 @@ header .menu a + a {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+    display: block;
+    text-align: center;
 }
 
 .advantages .item p {
@@ -756,6 +789,8 @@ header .menu a + a {
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #d4dbde;
+    display: block;
+    text-align: center;
 }
 
 .advantages .item {
@@ -781,6 +816,7 @@ header .menu a + a {
     font-weight: 700;
     text-transform: uppercase;
     color: #202b2f;
+    display: block;
     text-align: center;
 }
 
@@ -816,22 +852,26 @@ header .menu a + a {
     color: #ffffff;
     background-color: #02a0f9;
     text-decoration: none;
+    margin-left: 30px;
 }
 
 .news .img {
     width: 300px;
     height: 215px;
-    display: inline-block;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
+    margin-left: 35px;
 }
 
 .news .item {
     width: 33.3333%;
     float: left;
     padding: 0 15px;
+    background-color: #ffffff;
+}
+
+.news .item * {
+    display: block;
+    text-align: center;
 }
 
 .news .wrapper {
@@ -851,7 +891,7 @@ footer .wrapper .item {
 }
 
 footer .wrapper .item + .item {
-    margin-left: 60px;
+    margin-left: 190px;
 }
 
 footer .logo .text span:first-child {
@@ -934,6 +974,8 @@ footer .mail a {
     color: #06a9eb;
 }
 
+/*referrals*/
+
 header .user .img {
     width: 108px;
     height: 77px;
@@ -955,7 +997,7 @@ header .user .text span:last-child {
     color: #202b2f;
 }
 
-header .btnColor1 {
+header .topline .btnColor1 {
     font-size: 12px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
@@ -963,6 +1005,7 @@ header .btnColor1 {
     text-decoration: none;
     color: #ffffff;
     background-color: #3c9ef1;
+    padding: 15px 35px;
 }
 
 header .wrapper {
@@ -1035,6 +1078,7 @@ header .wrapper {
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
+    padding: 15px 20px;
 }
 
 .userInfo .btns .btnColor1 {
@@ -1143,9 +1187,10 @@ header .deposit a {
     color: #ffffff;
     text-decoration: none;
     background-color: #019efc;
+    padding: 15px 30px;
 }
 
-.content .deposir .img {
+.content .deposit .img {
     width: 35px;
     height: 35px;
     display: inline-block;
@@ -1155,13 +1200,15 @@ header .deposit a {
     background-position: left center;
 }
 
-.content > span {
+.content .captionDark {
     font-size: 30px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
     font-weight: 700;
     text-transform: uppercase;
     color: #202b2f;
+    display: block;
+    text-align: center;
 }
 
 .content .upline .captionDark {
@@ -1173,21 +1220,28 @@ header .deposit a {
     color: #202b2f;
 }
 
-.content .upline p {
+.content .upline span:last-child {
     font-size: 17px;
     line-height: 30px;
     letter-spacing: 0.02em;
     font-weight: 600;
     color: #04a4f2;
+    display: block;
+    text-align: center;
 }
 
 .content .upline .img {
     width: 90px;
     height: 90px;
-    display: inline-block;
     background-repeat: no-repeat;
+    display: inline-block;
     background-position: center;
     background-color: #ffffff;
+    margin-left: 545px;
+}
+
+.content .records span {
+    display: block;
 }
 
 .content .records span:first-child {
@@ -1205,24 +1259,26 @@ header .deposit a {
     color: #ffffff;
 }
 
-.content .records .point{
-    display: inline-block;
-}
-
-.content .records .point + .point {
-    margin-left: 30px;
-}
-
-.content .comission {
+.comission {
     background-color: #38a4ff;
 }
 
-.content .referrals {
+.referrals {
     background-color: #11c0c5;
 }
 
-.content .activeRef {
+.activeRef {
     background-color: #44d29d;
+}
+
+.content .records .point{
+    width: 33.3333%;
+    float: left;
+    padding: 0 15px;
+}
+
+.content .records {
+    margin: 0 -15px;
 }
 
 .content .refSignup {
@@ -1234,7 +1290,7 @@ header .deposit a {
     color: #202b2f;
 }
 
-.content form {
+.content  form {
     display: inline-block;
 }
 
@@ -1242,7 +1298,7 @@ header .deposit a {
     margin-left: 35px;
 }
 
-.content form label {
+.content .dateRef form label {
     font-size: 15px;
     line-height: 100px;
     font-weight: 700;
@@ -1261,6 +1317,7 @@ header .deposit a {
 
 .content select {
     background-color: #e6edf4;
+    padding: 15px 20px;
 }
 
 .content .table1 li span {
@@ -1309,6 +1366,7 @@ header .deposit a {
 
 .content .table2 li .point{
     display: inline-block;
+    padding: 0 30px;
 }
 
 .content .table2 li .point +.point{
@@ -1385,6 +1443,7 @@ header .deposit a {
     font-weight: 700;
     color: #202b2f;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .slider li {
@@ -1414,4 +1473,6 @@ header .deposit a {
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #202b2f;
+    display: block;
+    text-align: center;
 }
