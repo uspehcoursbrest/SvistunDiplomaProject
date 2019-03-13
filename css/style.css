@@ -132,7 +132,7 @@ header .menu a {
 }
 
 header .menu a + a {
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .menu .home {
@@ -455,6 +455,10 @@ header .menu a + a {
     background-color: #06aae9;
 }
 
+.profit label {
+    display: block;
+}
+
 .profit .inputBlockType1 label {
     font-size: 15px;
     line-height: 24px;
@@ -497,6 +501,7 @@ header .menu a + a {
     line-height: 50px;
     font-weight: 700;
     color: #ffffff;
+    display: block;
 }
 
 .profit .sum span:last-child {
@@ -644,6 +649,10 @@ header .menu a + a {
     letter-spacing: 0.05em;
     font-weight: 700;
     color: #202b2f;
+}
+
+.referral span[class*="icon"] {
+    text-align: center;
 }
 
 .referral .table li span:first-child {
