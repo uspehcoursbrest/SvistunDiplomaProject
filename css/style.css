@@ -3,7 +3,7 @@
 }
 
 body {
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
     font-family: "Montserrat";
 }
@@ -30,6 +30,37 @@ ul {
     clear: both;
 }
 
+
+.bodyWrap {
+    overflow: hidden;
+}
+
+header .headWrap {
+    display: table;
+    width: 100%;
+}
+
+.headWrap > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.headWrap .logo {
+    width: 30%;
+}
+
+.headWrap div + div {
+    width: 17.5%;
+    text-align: right;
+    padding: 0 15px;
+
+}
+
+.logo .text,
+.logo .text + span {
+    float: left;
+}
+
 .logo .text span:first-child {
     font-size: 50.16px;
     line-height: 21.5px;
@@ -46,15 +77,16 @@ ul {
     font-style: italic;
     letter-spacing: 0.35em;
     color: #202b2f;
+    display: block;
 }
+
 
 .logo .img {
     width: 95px;
-    height: 46px;
-    background-position: right;
-    display: inline-block;
-    padding-right: 100px;
+    height: 50px;
     background-repeat: no-repeat;
+    display: inline-block;
+    text-align: right;
 }
 
 header .subscribe [class^="btn"] {
@@ -65,7 +97,7 @@ header .subscribe [class^="btn"] {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
-    padding: 10px 35px;
+    padding: 10px 0;
 }
 
 header .subscribe .btnColor1 {
@@ -99,6 +131,16 @@ header .date .clock {
     color: #000;
 }
 
+.date .day {
+    display: inline-block;
+}
+
+.date .day span {
+    display: block;
+    text-align: left;
+    padding: 0 0;
+}
+
 header .day span:first-child {
     font-size: 13px;
     line-height: 14.43px;
@@ -128,7 +170,7 @@ header .menu a {
 }
 
 header .menu a + a {
-    margin-left: 62px;
+    margin-left: 60px;
 }
 
 /*main*/
@@ -248,6 +290,10 @@ header .menu a + a {
     text-transform: uppercase;
 }
 
+.start .wrapper {
+    position: relative;
+}
+
 .graph .img {
     width: 614px;
     height: 392PX;
@@ -255,6 +301,9 @@ header .menu a + a {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    position: absolute;
+    bottom: -90px;
+    right: 0;
 }
 
 .aboutCompany {
@@ -502,7 +551,7 @@ header .menu a + a {
 .profit .plan,
 .profit .sum,
 .profit a {
-    margin-left: 105px;
+    margin-left: 50px;
 }
 
 .profit .plan select,
@@ -516,6 +565,7 @@ header .menu a + a {
     line-height: 50px;
     font-weight: 700;
     color: #ffffff;
+
 }
 
 .profit .sum span:last-child {
@@ -523,6 +573,7 @@ header .menu a + a {
     line-height: 50px;
     font-weight: 700;
     color: #202b2f;
+    display: block;
 }
 
 .profit .btnColor3 {
@@ -677,6 +728,19 @@ header .menu a + a {
 
 .referral ul.table {
     background-color: #ffffff;
+    display: table;
+    width: 570px;
+    height: 415px;
+    padding: 30px;
+}
+
+.referral ul.table li {
+    display: table-row;
+}
+
+.referral ul.table li span {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .referral ul.table li span:first-child {
@@ -744,9 +808,8 @@ header .menu a + a {
     width: 21px;
     height: 21px;
     color: #000000;
-    display: inline-block;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: center;
 }
 
 .advantages {
@@ -882,6 +945,19 @@ header .menu a + a {
     background-color: #c9d3db;
 }
 
+.payments .wrapper {
+    display: table;
+    width: 1200px;
+    height: 136px;
+}
+
+.payments .wrapper li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
 footer {
     background-color: #202b2f;
 }
@@ -891,7 +967,7 @@ footer .wrapper .item {
 }
 
 footer .wrapper .item + .item {
-    margin-left: 190px;
+    margin-left: 180px;
 }
 
 footer .logo .text span:first-child {
@@ -903,7 +979,7 @@ footer .logo .text span:first-child {
     color: #ffffff;
 }
 
-footer .logo .text span:last-child {
+footer .logo .text span:nth-child(2) {
     font-size: 12.18px;
     line-height: 21.5px;
     letter-spacing: 0.35em;
@@ -977,17 +1053,34 @@ footer .mail a {
 /*referrals*/
 
 header .user .img {
-    width: 108px;
     height: 77px;
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: center;
+}
+
+header .user .img,
+header .user .text {
+    float: left;
+    padding: 0 15px;
+    vertical-align: middle;
+}
+
+/*header .user .text {*/
+    /*padding-left: 30px;*/
+/*}*/
+
+header .user {
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 -15px;
 }
 
 header .user .text span:first-child {
     font-size: 14px;
     line-height: 17px;
     color: #202b2f;
+    display: block;
+    text-align: left;
 }
 
 header .user .text span:last-child {
@@ -995,6 +1088,8 @@ header .user .text span:last-child {
     line-height: 17px;
     font-weight: 600;
     color: #202b2f;
+    display: block;
+    text-align: left;
 }
 
 header .topline .btnColor1 {
@@ -1045,7 +1140,9 @@ header .wrapper {
     color: #ffffff;
 }
 
-.userInfo .balance span:first-child {
+
+
+.userInfo .balance > span {
     font-size: 4em;
     color: #3bbbea;
     display: inline-block;
@@ -1055,20 +1152,33 @@ header .wrapper {
 }
 
 
-.userInfo .balance span:nth-child(2) {
+.userInfo .balance .text span:nth-child(1) {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #ffffff;
+    display: block;
 }
 
-.userInfo .balance span:nth-child(3) {
+.userInfo .balance .text span:nth-child(2) {
     font-size: 28px;
     line-height: 36px;
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #ffffff;
+    display: block;
+}
+
+.userInfo .balance .text,
+.userInfo .balance > span {
+float: left;
+padding: 0 15px;
+vertical-align: middle;
+}
+
+.userInfo .balance {
+    margin: 0 -15px;
 }
 
 .userInfo .btns a {
@@ -1087,6 +1197,7 @@ header .wrapper {
 
 .userInfo .btns .btnColor2 {
     background-color: #1ede99;
+    display: block;
 }
 
 .userInfo .img {
@@ -1152,20 +1263,20 @@ header .deposit .img {
     background-position: center;
 }
 
-header .navigation {
+header .navigation,
+header .item{
     width: 33.3333%;
-    float: left;
-    padding: 0 20px;
-}
-
-header .deposit {
-    width: 66.6666%;
     float: left;
     padding: 0 20px;
 }
 
 header .wrapper{
     margin: 0 -20px;
+}
+
+header .navigation,
+header .deposit .item {
+    background-color: #ffffff;
 }
 
 .content {
@@ -1234,10 +1345,10 @@ header .deposit a {
     width: 90px;
     height: 90px;
     background-repeat: no-repeat;
-    display: inline-block;
     background-position: center;
     background-color: #ffffff;
-    margin-left: 545px;
+    display: block;
+    text-align: center;
 }
 
 .content .records span {
@@ -1272,13 +1383,14 @@ header .deposit a {
 }
 
 .content .records .point{
-    width: 33.3333%;
+    width: 30%;
     float: left;
-    padding: 0 15px;
+    padding: 0 40px;
+    margin: 0 15px;
 }
 
 .content .records {
-    margin: 0 -15px;
+    margin: 0 -40px;
 }
 
 .content .refSignup {
@@ -1292,6 +1404,13 @@ header .deposit a {
 
 .content  form {
     display: inline-block;
+    width: 45%;
+    padding: 0 30px;
+    margin: 15px;
+}
+
+.content .dateRef {
+    margin: 0 -30px;
 }
 
 .content form + form {
@@ -1303,12 +1422,15 @@ header .deposit a {
     line-height: 100px;
     font-weight: 700;
     color: #202b2f;
+    display: block;
 }
 
 .content form option {
     font-size: 13px;
     line-height: 100px;
     color: #202b2f;
+    display: block;
+    text-align: left;
 }
 
 .content .dateRef {
@@ -1317,18 +1439,18 @@ header .deposit a {
 
 .content select {
     background-color: #e6edf4;
-    padding: 15px 20px;
+    padding: 15px 220px;
 }
 
-.content .table1 li span {
-    width: 33.3333%;
-    float: left;
-    padding: 0 200px;
-}
+/*.content .table1 li span {*/
+    /*width: 33.3333%;*/
+    /*float: left;*/
+    /*padding: 0 200px;*/
+/*}*/
 
-.content .table1 li {
-    margin: 0 -200px;
-}
+/*.content .table1 li {*/
+    /*margin: 0 -200px;*/
+/*}*/
 
 .content .table1 li:first-child {
     font-size: 15px;
@@ -1364,13 +1486,20 @@ header .deposit a {
     color: #202b2f;
 }
 
-.content .table2 li .point{
-    display: inline-block;
-    padding: 0 30px;
+.content .table2 li div{
+    width: 30%;
+   float: left;
+    padding: 0 12px;
+    margin: 0 10px;
 }
 
-.content .table2 li .point +.point{
-    margin-left: 20px;
+.content .table2 li .img {
+    float: left;
+}
+
+
+.content .table2 li {
+    margin: 0 -12px;
 }
 
 .content .table2 .title {
@@ -1431,7 +1560,7 @@ header .deposit a {
     width: 50px;
     height: 50px;
     color: #ffffff;
-    display: inline-block;
+
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1448,6 +1577,8 @@ header .deposit a {
 
 .slider li {
     display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .slider li + li {
