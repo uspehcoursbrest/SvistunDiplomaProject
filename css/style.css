@@ -50,10 +50,8 @@ header .headWrap {
 }
 
 .headWrap div + div {
-    width: 17.5%;
     text-align: right;
     padding: 0 15px;
-
 }
 
 .logo .text,
@@ -89,7 +87,7 @@ header .headWrap {
     text-align: right;
 }
 
-header .subscribe [class^="btn"] {
+header .topline .subscribe [class^="btn"] {
     font-size: 12px;
     line-height: 83.73px;
     font-weight: 700;
@@ -97,7 +95,7 @@ header .subscribe [class^="btn"] {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 10px 15px;
 }
 
 header .subscribe .btnColor1 {
@@ -1061,18 +1059,8 @@ header .user .img {
 header .user .img,
 header .user .text {
     float: left;
-    padding: 0 15px;
+    padding: 0 17px;
     vertical-align: middle;
-}
-
-/*header .user .text {*/
-    /*padding-left: 30px;*/
-/*}*/
-
-header .user {
-    text-align: left;
-    vertical-align: middle;
-    margin: 0 -15px;
 }
 
 header .user .text span:first-child {
@@ -1439,18 +1427,8 @@ header .deposit a {
 
 .content select {
     background-color: #e6edf4;
-    padding: 15px 220px;
+    padding: 15px  220px 15px 15px;
 }
-
-/*.content .table1 li span {*/
-    /*width: 33.3333%;*/
-    /*float: left;*/
-    /*padding: 0 200px;*/
-/*}*/
-
-/*.content .table1 li {*/
-    /*margin: 0 -200px;*/
-/*}*/
 
 .content .table1 li:first-child {
     font-size: 15px;
