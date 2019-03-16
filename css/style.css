@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
     font-family: "Montserrat";
 }
@@ -89,13 +89,14 @@ header .headWrap {
 
 header .topline .subscribe [class^="btn"] {
     font-size: 12px;
-    line-height: 83.73px;
+    line-height: 30px;
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
-    padding: 10px 15px;
+    /*display: inline-block;*/
+    padding: 0 15px;
 }
 
 header .subscribe .btnColor1 {
@@ -107,8 +108,8 @@ header .subscribe .btnColor2 {
 }
 
 .languages .img {
-    width: 15px;
-    height: 15px;
+    width: 35px;
+    height: 32px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -181,6 +182,7 @@ header .menu a + a {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    padding-top: 100px;
 }
 
 .start .caption span {
@@ -309,6 +311,7 @@ header .menu a + a {
     -webkit-background-size: cover;
     background-size: cover;
     margin: 0 -25px;
+    padding-top: 200px;
 }
 
 .aboutCompany .left {
@@ -385,6 +388,7 @@ header .menu a + a {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    padding-top: 90px;
 }
 
 .plan1 .item {
@@ -590,6 +594,7 @@ header .menu a + a {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    padding-top: 105px;
 }
 
 .referral . img .left,
@@ -814,6 +819,7 @@ header .menu a + a {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    padding-top: 300px;
 }
 
 .advantages .item span[class^="icon"] {
@@ -1080,7 +1086,7 @@ header .user .text span:last-child {
     text-align: left;
 }
 
-header .topline .btnColor1 {
+header .headWrap >  .btnColor1 {
     font-size: 12px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
@@ -1337,6 +1343,7 @@ header .deposit a {
     background-color: #ffffff;
     display: block;
     text-align: center;
+    margin: 0 auto;
 }
 
 .content .records span {
