@@ -30,6 +30,45 @@ ul {
     clear: both;
 }
 
+[class*="grad"] {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
+}
+
+[class*="Grad"] {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
+    background: #009cff; /* Old browsers */
+    background: -moz-linear-gradient(left, #009cff 0%, #1fe195 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009cff 0%, #1fe195 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009cff 0%, #1fe195 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009cff', endColorstr='#1fe195', GradientType=1); /* IE6-9 */
+}
+
+a[class*="btn"] {
+    border-radius: 50px;
+}
+
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
 
 .bodyWrap {
     overflow: hidden;
@@ -43,6 +82,10 @@ header .headWrap {
 .headWrap > div {
     display: table-cell;
     vertical-align: middle;
+}
+
+.topline {
+    padding-top: 36px;
 }
 
 .headWrap .logo {
@@ -95,8 +138,8 @@ header .topline .subscribe [class^="btn"] {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
-    /*display: inline-block;*/
-    padding: 0 15px;
+    display: inline-block;
+    padding: 0 30px;
 }
 
 header .subscribe .btnColor1 {
@@ -117,9 +160,12 @@ header .subscribe .btnColor2 {
 
 header .social a {
     font-size: 16px;
+    line-height: 32px;
     text-decoration: none;
     color: #000000;
     background-color: #ebf2f6;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 header .date .clock {
@@ -128,6 +174,8 @@ header .date .clock {
     font-weight: 700;
     letter-spacing: 0.025em;
     color: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .date .day {
@@ -156,6 +204,7 @@ header .day span:last-child {
 
 header .menu {
     background-color: #202b2f;
+    margin-top: 30px;
 }
 
 header .menu a {
@@ -215,20 +264,38 @@ header .menu a + a {
 
 .getStarted .btnGrad1 {
     font-size: 17px;
-    line-height: 83.73px;
+    line-height: 64px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #ffffff;
     text-decoration: none;
     background-color: #02a0f9;
-    display: table;
-    margin-left: auto;
+    display: block;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: calc(100% - 310px);
+    padding: 0 64px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
 }
 
 .start .currency {
     background-color: #ffffff;
-    display: table;
     margin-left: auto;
+    margin-top: 73px;
+    width: 300px;
+    height: 330px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+}
+
+.start .currency li {
+    padding: 15px 25px;
+}
+
+.start .currency .text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
 }
 
 .start .currency .text span:first-child {
@@ -244,23 +311,37 @@ header .menu a + a {
     line-height: 24px;
     font-weight: 700;
     color: #202b2f;
+    display: block;
+    text-align: left;
+
 }
 
-.start .currency .text span:last-child {
+.start .currency .text span:nth-child(2) > span {
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     color: #19cf8b;
+
 }
 
 .start .currency span[class^="icon"] {
     font-size: 3em;
     color: #000000;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
 
 .start .advantages {
     display: table;
     margin-right: auto;
+    padding-bottom: 98px;
+    margin-top: 40px;
+}
+
+.start .advantages ul li,
+.start .advantages p {
+    padding-top: 50px;
 }
 
 .start .list li span:nth-child(2) {
@@ -270,12 +351,20 @@ header .menu a + a {
     letter-spacing: 0.024em;
     text-transform: uppercase;
     color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
 }
 
 .start .list li span:first-child {
     font-size: 3em;
     color: #000000;
     background-color: #57c5f2;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .start .advantages .textBlockLight {
@@ -295,15 +384,15 @@ header .menu a + a {
 }
 
 .graph .img {
-    width: 614px;
-    height: 392PX;
+    width: 820px;
+    height: 496PX;
     display: inline-block;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
     bottom: -90px;
-    right: 0;
+    right: -70px;
 }
 
 .aboutCompany {
@@ -311,23 +400,24 @@ header .menu a + a {
     -webkit-background-size: cover;
     background-size: cover;
     margin: 0 -25px;
-    padding-top: 200px;
+    padding-top: 190px;
+    padding-bottom: 86px;
 }
 
 .aboutCompany .left {
-    width: 50%;
+
     float: left;
-    padding: 0 25px;
+
 }
 
 .aboutCompany .right {
-    width: 50%;
-    float: right;
-    padding: 0 25px;
+    width: calc(100% - 500px);
+    float: left;
+    padding: 0 30px;
 }
 
 .aboutCompany {
-    margin: 0 -25px;
+    margin: 0 -30px;
 }
 
 .aboutCompany .left .captionLight {
@@ -340,17 +430,29 @@ header .menu a + a {
     text-align: left;
 }
 
-.address span {
+.aboutCompany .address {
+    padding-top: 65px;
+}
+
+.aboutCompany .address span {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.025em;
     color: #ffffff;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 20px;
 }
 
-.address a {
+.aboutCompany .address a {
     text-decoration: none;
-    font-size: 3em;
-    color: #ffffff;
+    font-size: 4em;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .aboutCompany .right p {
@@ -360,28 +462,43 @@ header .menu a + a {
     color: #ffffff;
 }
 
+.aboutCompany .right p + p {
+    padding-top: 55px;
+}
+
+.aboutCompany .btnInfo {
+    padding-top: 77px;
+}
+
 .aboutCompany .right a {
     font-size: 17px;
-    line-height: 83.73px;
+    line-height: 60px;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    padding: 25px 40px;
+    display: inline-block;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+
 }
 
 .aboutCompany .right .btnColor1 {
     background-color: #03a3f4;
+    padding: 0 60px;
 }
 
 .aboutCompany .right .btnColor2 {
     background-color: #44d29d;
+    margin-left: 40px;
+    padding: 0 30px;
 }
 
 .aboutCompany img {
-    width: 218px;
+    width: 220px;
     height: 306px;
+    padding-top: 50px;
+    padding-right: 25px;
 }
 
 .plans {
@@ -393,10 +510,12 @@ header .menu a + a {
 
 .plan1 .item {
     background-color: #3c9ef1;
+    background-position: bottom;
 }
 
 .plan2 .item {
     background-color: #44d29d;
+    background-position: bottom;
 }
 
 .plans [class^="tarif"] {
@@ -409,15 +528,25 @@ header .menu a + a {
     background-size: cover;
     width: 50%;
     float: left;
-    padding: 0 30px;
+    border-radius: 25px;
 }
 
 .plans .wrapper {
     margin: 0 -30px;
+    margin-top: 70px;
+    padding-bottom: 100px;
 }
 
 .plans .plan1 {
     margin: 0 -60px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+}
+.plans .item {
+border-radius: 25px 0  0 25px;
+}
+
+.plans div[class^="tarif"] {
+    border-radius:  0  25px 25px 0;
 }
 
 .plans .item,
@@ -425,10 +554,13 @@ header .menu a + a {
     width: 50%;
     float: left;
     padding: 0 30px;
+    padding-bottom: 30px;
 }
 
 .plans .plan2 {
     margin: 0 -30px;
+    margin-left: 90px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .plans .captionDark {
@@ -457,6 +589,8 @@ header .menu a + a {
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
+    display: block;
+    padding-top: 45px;
 }
 
 .plans .item .big {
@@ -465,6 +599,8 @@ header .menu a + a {
     font-weight: 700;
     letter-spacing: 0.025em;
     color: #ffffff;
+    display: block;
+    padding-top: 220px;
 }
 
 .plans .item span:nth-child(3) {
@@ -477,13 +613,16 @@ header .menu a + a {
 
 .plans .item a {
     font-size: 15px;
-    line-height: 83.73px;
+    line-height: 42px;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #ffffff;
     text-decoration: none;
-    padding: 20px 40px;
+    padding: 0 30px;
     display: block;
+    text-align: center;
+    margin-top: 30px;
+
 }
 
 .plans .item .btnColor1 {
@@ -492,6 +631,10 @@ header .menu a + a {
 
 .plans .item .btnColor2 {
     background-color: #44d29d;
+}
+
+.plans .block1 li {
+    padding-top: 40px;
 }
 
 .plans [class^="tarif"] .block1 span:first-child {
@@ -520,12 +663,23 @@ header .menu a + a {
     color: #202b2f;
 }
 
+.plans .tarifplan1 .block2 {
+    padding-top: 65px;
+}
+
+.plans .tarifplan2 .block2 {
+    padding-top: 87px;
+}
+
 .plans .tarifplan2 .block1 span:last-child {
     color: #44d29d;
 }
 
 .profit {
     background-color: #06aae9;
+    vertical-align: middle;
+    padding-bottom: 60px;
+    padding-top: 50px;
 }
 
 .profit label {
@@ -537,10 +691,18 @@ header .menu a + a {
 }
 
 .profit input,
-.profit select option{
+.profit .plan select {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 45px;
     color: #000000;
+    margin-top: 15px;
+    display: block;
+    border-radius: 25px;
+}
+
+.profit .plan select {
+    height: 50px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
 }
 
 .profit .amount,
@@ -548,12 +710,13 @@ header .menu a + a {
 .profit .sum,
 .profit a {
     display: inline-block;
+
 }
 
 .profit .plan,
 .profit .sum,
 .profit a {
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .profit .plan select,
@@ -572,22 +735,23 @@ header .menu a + a {
 
 .profit .sum span:last-child {
     font-size: 30px;
-    line-height: 50px;
+    line-height: 45px;
     font-weight: 700;
     color: #202b2f;
-    display: block;
 }
 
 .profit .btnColor3 {
     font-size: 15px;
-    line-height: 83.73px;
+    line-height: 45px;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     background-color: #202b2f;
+    display: inline-block;
     padding: 0 50px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .referral {
@@ -595,15 +759,25 @@ header .menu a + a {
     -webkit-background-size: cover;
     background-size: cover;
     padding-top: 105px;
+
 }
 
-.referral . img .left,
+.referral .wrapper {
+    margin-top: 75px;
+    position: relative;
+}
+
+.referral .wrapper .item .img {
+    padding-left: 220px;
+}
+
+.referral .img .left,
 .referral .img .right {
     display: inline-block;
 }
 
 .referral .img .right {
-    margin-left: 450px;
+    margin-left: 470px;
 }
 
 .referral .captionDark {
@@ -619,10 +793,13 @@ header .menu a + a {
 
 .referral .img .percent {
     font-size: 30px;
-    line-height: 40px;
     font-weight: 700;
     letter-spacing: 0.025em;
     color: #ffffff;
+    display: table;
+    margin-left: 100px;
+    border-radius: 50%;
+    padding: 5px 10px;
 }
 
 .referral .left span:first-child {
@@ -634,10 +811,14 @@ header .menu a + a {
     line-height: 40px;
     font-weight: 700;
     letter-spacing: 0.025em;
+    padding-left: 30px;
+    display: inline-block;
+    padding-top: 30px;
 }
 
 .referral .left span:nth-child(2) {
     color: #03a3f4;
+
 }
 
 .referral .img .text {
@@ -645,6 +826,9 @@ header .menu a + a {
     line-height: 20px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-top: 25px;
 }
 
 .referral .left span:last-child {
@@ -657,6 +841,7 @@ header .menu a + a {
 
 .referral .right span:nth-child(2) {
     color: #44d29d;
+
 }
 
 .referral .right span:last-child {
@@ -669,21 +854,25 @@ header .menu a + a {
     letter-spacing: 0.025em;
     color: #202b2f;
     text-align: center;
+    padding-top: 165px;
 }
 
 .referral a {
     font-size: 17px;
-    line-height: 83.53px;
+    line-height: 60px;
     letter-spacing: 0.05em;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #03a3f4;
     text-decoration: none;
-    display: table;
+    display: block;
     margin: auto;
     text-align: center;
     padding: 0 20px;
+    margin-top: 63px;
+    width: 200px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .referral .point {
@@ -694,17 +883,29 @@ header .menu a + a {
 
 .referral ul.clear {
     margin: 0 -25px;
+    margin-top: 252px;
+    padding-bottom: 310px;
 }
 
-.referral .lefttable,
-.referral .righttable {
-    width: 50%;
+.referral .lefttable {
+    width: 47%;
     float: left;
-    padding: 0 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+}
+
+.referral .righttable {
+    width: 45%;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .referral .table.clear{
     margin: 0 -15px;
+    margin-top: 72px;
+    position: absolute;
+    bottom: -200px;
 }
 
 .referral .point span:nth-child(2) {
@@ -714,6 +915,7 @@ header .menu a + a {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+    padding-top: 43px;
 }
 
 .referral .point span:last-child {
@@ -729,12 +931,15 @@ header .menu a + a {
     text-align: center;
 }
 
+
+
 .referral ul.table {
     background-color: #ffffff;
     display: table;
     width: 570px;
     height: 415px;
     padding: 30px;
+    border-radius: 25px 25px 0 0;
 }
 
 .referral ul.table li {
@@ -778,29 +983,36 @@ header .menu a + a {
 
 .referral ul.table + span {
     font-size: 17px;
-    line-height: 83.73px;
+    line-height: 50px;
     letter-spacing: 0.025em;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+    border-radius: 0 0 25px 25px;
 }
 
 .referral .lefttable > span {
     background-color: #04a4f2;
     display: block;
     text-align: center;
+    width: 570px;
 }
 
 .referral .righttable > span {
     background-color: #44d29d;
     display: block;
     text-align: center;
+    width: 570px;
 }
 
-.referral [class^="icon"] {
+.referral .item [class^="icon"] {
     font-size: 3em;
     color: #000000;
     background-color: #5fd4db;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    margin-left: 60px;
 }
 
 .referral ul.table li span:last-child {
@@ -815,7 +1027,7 @@ header .menu a + a {
     background-position: center;
 }
 
-.advantages {
+.content > .advantages {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
@@ -824,9 +1036,10 @@ header .menu a + a {
 
 .advantages .item span[class^="icon"] {
     font-size: 3em;
-    color: #02a0f9;
-    display: block;
-    text-align: center;
+    display: inline-block;
+    margin-left: 140px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .advantages .captionLight {
@@ -849,6 +1062,7 @@ header .menu a + a {
     color: #ffffff;
     display: block;
     text-align: center;
+    padding-top: 40px;
 }
 
 .advantages .item p {
@@ -858,22 +1072,26 @@ header .menu a + a {
     color: #d4dbde;
     display: block;
     text-align: center;
+    padding-top: 35px;
 }
 
 .advantages .item {
     width: 33.3333%;
     float: left;
-    padding: 0 35px;
+    padding: 82px 35px 0;
 }
 
 .advantages .wrapper {
     margin: 0 -35px;
+    padding-bottom: 100px;
 }
 
 .news {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+    padding-top: 97px;
+    padding-bottom: 120px;
 }
 
 .news .captionDark {
@@ -893,6 +1111,8 @@ header .menu a + a {
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #03a3f4;
+    text-align: left;
+    padding-top: 20px;
 }
 
 .news .item span:nth-child(3) {
@@ -901,6 +1121,8 @@ header .menu a + a {
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #202b2f;
+    text-align: left;
+    padding-top: 30px;
 }
 
 .news .item p {
@@ -908,37 +1130,48 @@ header .menu a + a {
     line-height: 24px;
     letter-spacing: 0.025em;
     color: #202b2f;
+    text-align: left;
 }
 
 .news .item a {
     font-size: 15px;
-    line-height: 83.73px;
+    line-height: 40px;
     letter-spacing: 0.05em;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #02a0f9;
     text-decoration: none;
-    margin-left: 30px;
+    display: block;
+    text-align: left;
+    margin: 35px 170px 45px 30px;
+    padding: 0 30px;
 }
 
 .news .img {
     width: 300px;
     height: 215px;
     background-repeat: no-repeat;
-    margin-left: 35px;
+    margin: 0 auto;
 }
 
 .news .item {
-    width: 33.3333%;
+    width: 30%;
     float: left;
-    padding: 0 15px;
     background-color: #ffffff;
+    padding-top: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+}
+
+.news .item + .item {
+    margin-left: 32px;
 }
 
 .news .item * {
     display: block;
     text-align: center;
+    padding: 0 35px;
 }
 
 .news .wrapper {
@@ -964,6 +1197,7 @@ header .menu a + a {
 
 footer {
     background-color: #202b2f;
+    padding: 70px 0;
 }
 
 footer .wrapper .item {
@@ -971,7 +1205,7 @@ footer .wrapper .item {
 }
 
 footer .wrapper .item + .item {
-    margin-left: 180px;
+    margin-left: 175px;
 }
 
 footer .logo .text span:first-child {
@@ -992,18 +1226,32 @@ footer .logo .text span:nth-child(2) {
     color: #ffffff;
 }
 
+footer .widgets {
+    margin-top: 45px;
+}
+
 footer .widgets a {
     font-size: 16px;
     text-decoration: none;
     color: #ffffff;
     background-color: #4b5559;
+    border-radius: 50%;
+    padding: 5px;
 }
+
+
+footer .widgets a + a {
+    margin-left: 15px;
+}
+
 
 footer .copyrights {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.025em;
     color: #ffffff;
+    display: block;
+    margin-top: 30px;
 }
 
 footer ul.menu li::before {
@@ -1018,6 +1266,7 @@ footer .menu a {
     font-weight: 500;
     color: #ffffff;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -1056,8 +1305,13 @@ footer .mail a {
 
 /*referrals*/
 
+header .social a.big {
+    padding: 10px;
+    margin-left: 12px;
+}
+
 header .user .img {
-    height: 77px;
+    height: 32px;
     display: inline-block;
     background-repeat: no-repeat;
 }
@@ -1086,21 +1340,36 @@ header .user .text span:last-child {
     text-align: left;
 }
 
-header .headWrap >  .btnColor1 {
+header .headWrap  .btnColor1 {
     font-size: 12px;
-    line-height: 83.73px;
+    line-height: 30px;
     letter-spacing: 0.025em;
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
     background-color: #3c9ef1;
-    padding: 15px 35px;
+    display: block;
+    padding: 0 35px;
 }
 
 header .wrapper {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+.userInfo {
+    padding-top: 30px;
+}
+
+.userInfo .info .point > div {
+    padding: 0 20px;
+    float: left;
+    vertical-align: middle;
+}
+
+.userInfo .info .point {
+    margin: 0 -20px;
 }
 
 .userInfo .info .title {
@@ -1110,20 +1379,26 @@ header .wrapper {
     color: #ffffff;
 }
 
+.userInfo .info .point:last-child {
+    padding-top: 30px;
+}
+
 .userInfo .info .text {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #ffffff;
+    display: block;
+    text-align: left;
 }
 
 .userInfo [class^="icon"] {
     font-size: 2em;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
     color: #ffffff;
+    float: left;
 }
 
 .userInfo .link2 {
@@ -1132,17 +1407,25 @@ header .wrapper {
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #ffffff;
+    padding: 0 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.userInfo .link2 span {
+    display: block;
 }
 
 
 
 .userInfo .balance > span {
     font-size: 4em;
-    color: #3bbbea;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #000000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -1177,21 +1460,25 @@ vertical-align: middle;
 
 .userInfo .btns a {
     font-size: 15px;
-    line-height: 83.73px;
+    line-height: 45px;
     letter-spacing: 0.05em;
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
-    padding: 15px 20px;
+    padding: 0 20px;
+    display: block;
+
 }
 
 .userInfo .btns .btnColor1 {
     background-color: #38a4ff;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .userInfo .btns .btnColor2 {
     background-color: #1ede99;
-    display: block;
+    margin-top: 15px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .userInfo .img {
@@ -1201,6 +1488,8 @@ vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3bbbea;
+    border-radius: 50%;
+    padding: 65px;
 }
 
 .userInfo .img,
@@ -1208,12 +1497,17 @@ vertical-align: middle;
 .userInfo .balance,
 .userInfo .btns {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .userInfo .info,
 .userInfo .balance,
 .userInfo .btns {
-    margin-left: 40px;
+    padding-left: 90px;
+}
+
+.navigation {
+    width: 350px;
 }
 
 .navigation span {
@@ -1226,6 +1520,8 @@ vertical-align: middle;
     font-weight: 700;
     text-transform: uppercase;
     color: #202b2f;
+    vertical-align: middle;
+    padding-left: 20px;
 }
 
 .navigation span[class^="icon"] {
@@ -1248,7 +1544,7 @@ header .deposit .title {
     color: #202b2f;
 }
 
-header .deposit .img {
+header .deposit .img1 {
     width: 27px;
     height: 27px;
     color: #ffffff;
@@ -1258,10 +1554,10 @@ header .deposit .img {
 }
 
 header .navigation,
-header .item{
-    width: 33.3333%;
+header .deposit{
     float: left;
     padding: 0 20px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 header .wrapper{
@@ -1269,8 +1565,14 @@ header .wrapper{
 }
 
 header .navigation,
-header .deposit .item {
+header .deposit  {
     background-color: #ffffff;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+header .deposit {
+    background-color: rgba(252,253,254,0.87);
 }
 
 .content {
@@ -1283,29 +1585,59 @@ header .deposit .text {
     font-weight: 700;
 }
 
+header .deposit .item {
+    float: left;
+    margin: 30px 45px;
+}
+
+header .deposit {
+    width: 775px;
+    margin-left: 45px;
+    display: table;
+}
+
+.deposit  .point {
+    display: table-row;
+    vertical-align: middle;
+}
+
+
+.deposit .item .point > div {
+    display: table-cell;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.deposit .item .point + .point * {
+    padding-top: 20px;
+}
+
 header .deposit a {
     font-size: 15px;
-    line-height: 83.73px;
+    line-height: 45px;
     letter-spacing: 0.05em;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
     background-color: #019efc;
-    padding: 15px 30px;
-}
-
-.content .deposit .img {
-    width: 35px;
-    height: 35px;
+    padding: 0 30px;
     display: inline-block;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: left center;
+    text-align: center;
+    margin-top: 25px;
 }
 
-.content .captionDark {
+.deposit .point .img {
+    width: 42px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+}
+
+.content .container > .captionDark {
     font-size: 30px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
@@ -1314,6 +1646,7 @@ header .deposit a {
     color: #202b2f;
     display: block;
     text-align: center;
+    padding-top: 60px;
 }
 
 .content .upline .captionDark {
@@ -1323,6 +1656,8 @@ header .deposit a {
     font-weight: 700;
     text-transform: uppercase;
     color: #202b2f;
+    text-align: center;
+    display: block;
 }
 
 .content .upline span:last-child {
@@ -1342,8 +1677,10 @@ header .deposit a {
     background-position: center;
     background-color: #ffffff;
     display: block;
-    text-align: center;
-    margin: 0 auto;
+    margin: 55px auto 0;
+    border-radius: 50%;
+    padding: 65px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .content .records span {
@@ -1367,25 +1704,31 @@ header .deposit a {
 
 .comission {
     background-color: #38a4ff;
+    border-radius: 50px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .referrals {
     background-color: #11c0c5;
+    border-radius: 50px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .activeRef {
     background-color: #44d29d;
+    border-radius: 50px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .content .records .point{
     width: 30%;
     float: left;
-    padding: 0 40px;
+    padding: 10px 40px;
     margin: 0 15px;
 }
 
 .content .records {
-    margin: 0 -40px;
+    margin: 50px -40px 0;
 }
 
 .content .refSignup {
@@ -1395,17 +1738,17 @@ header .deposit a {
     font-weight: 700;
     text-transform: uppercase;
     color: #202b2f;
+    display: block;
+    text-align: center;
+    padding-top: 65px;
 }
 
-.content  form {
+.content .item form {
     display: inline-block;
     width: 45%;
     padding: 0 30px;
     margin: 15px;
-}
 
-.content .dateRef {
-    margin: 0 -30px;
 }
 
 .content form + form {
@@ -1414,7 +1757,6 @@ header .deposit a {
 
 .content .dateRef form label {
     font-size: 15px;
-    line-height: 100px;
     font-weight: 700;
     color: #202b2f;
     display: block;
@@ -1430,11 +1772,40 @@ header .deposit a {
 
 .content .dateRef {
     background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .content select {
     background-color: #e6edf4;
-    padding: 15px  220px 15px 15px;
+    padding: 15px 430px 15px 15px;
+    border-radius: 25px;
+    border: 1px solid #d3d9df;
+}
+
+.content .table1 {
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+}
+
+.content .table1 li + li {
+    background-color: #ffffff;
+}
+
+.content .table1 li {
+    display: table;
+    width: 100%;
+    border: 1px solid #d0d2d3;
+}
+
+.content .table1 li span {
+    display: table-cell;
+    width: 33.3333%;
+}
+
+.content .table1 li span:first-child {
+    padding-left: 30px;
 }
 
 .content .table1 li:first-child {
@@ -1445,16 +1816,39 @@ header .deposit a {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #3c9ef1;
+    border-radius: 25px 25px 0 0;
 }
 
-.content .table1 .date {
+.content .table1 li:last-child {
+    border-radius: 0 0 25px 25px;
+}
+
+.content .table1 li + li span:first-child {
     font-size: 15px;
     line-height: 50px;
     letter-spacing: 0.025em;
     color: #202b2f;
 }
 
-.content .table1 .text {
+.content .table1 li span:nth-child(2) {
+    text-align: center;
+}
+
+.content .table1 li span:nth-child(3) {
+    text-align: right;
+    padding-right: 100px;
+}
+
+.content .table1 li span.date {
+    padding-left: 50px;
+}
+
+.content .table1 li span.signap {
+    padding-right: 75px;
+}
+
+.content .table1 li +li span:nth-child(2),
+.content .table1 li +li span:nth-child(3){
     font-size: 15px;
     line-height: 50px;
     letter-spacing: 0.025em;
@@ -1464,18 +1858,28 @@ header .deposit a {
 
 .content .yourRef {
     font-size: 20px;
-    line-height: 83.73px;
     letter-spacing: 0.025em;
     font-weight: 700;
     text-transform: uppercase;
     color: #202b2f;
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.content .table2 {
+    margin-top: 55px;
 }
 
 .content .table2 li div{
     width: 30%;
    float: left;
-    padding: 0 12px;
+    padding: 5px 30px;
     margin: 0 10px;
+}
+
+.content .table2 li:nth-child(3) {
+    border: 1px solid #202b2f;
 }
 
 .content .table2 li .img {
@@ -1484,7 +1888,13 @@ header .deposit a {
 
 
 .content .table2 li {
-    margin: 0 -12px;
+    margin: 15px -12px;
+    padding: 10px 10px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+}
+
+.table2 li > div {
+    line-height: 20px;
 }
 
 .content .table2 .title {
@@ -1492,6 +1902,7 @@ header .deposit a {
     line-height: 17px;
     letter-spacing: 0.025em;
     color: #202b2f;
+    display: block;
 }
 
 .content .table2 .name {
@@ -1500,37 +1911,42 @@ header .deposit a {
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #202b2f;
+    display: block;
 }
 
 .content .table2 li {
     background-color: #ffffff;
+    border-radius: 50px;
 }
 
 .content .table2 .textBlockDark {
     background-color: #c9d3db;
+    border-radius: 25px;
 }
 
 .content .table2 .text span:first-child {
     font-size: 13px;
-    line-height: 16px;
     letter-spacing: 0.025em;
     color: #ffffff;
+    display: block;
 }
 
 .content .table2 .text span:last-child {
     font-size: 13px;
-    line-height: 16px;
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #ffffff;
+    display: block;
 }
 
 .content .table2 li div:nth-child(3) {
     background-color: #3c9ef1;
+    border-radius: 25px;
 }
 
 .content .table2 li div:nth-child(4) {
     background-color: #44d29d;
+    border-radius: 25px;
 }
 
 .content .table2 p {
@@ -1543,45 +1959,58 @@ header .deposit a {
 
 .content .table .img {
     width: 50px;
-    height: 50px;
+    height: 45px;
     color: #ffffff;
-
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.slider {
+.slider li span {
     font-size: 17px;
-    line-height: 24px;
     letter-spacing: 0.025em;
     font-weight: 700;
     color: #202b2f;
-    background-color: #ffffff;
+}
+.slider ul {
     text-align: center;
 }
 
 .slider li {
+    margin-top: 70px;
     display: inline-block;
-    text-align: center;
     vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .slider li + li {
     margin-left: 20px;
 }
 
-.slider li:nth-child(3) {
+.slider li:nth-child(3) span {
     color: #ffffff;
     background-color: #1edf98;
+    border-radius: 50%;
+    display: block;
+    padding: 15px 20px;
+}
+
+.slider li:nth-child(2) span,
+.slider li:nth-child(4) span {
+background-color: #ffffff;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 50%;
 }
 
 .slider .img {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: block;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #c9d3db;
+    border-radius: 50%;
 }
 
 .content .copyrights {
@@ -1591,4 +2020,5 @@ header .deposit a {
     color: #202b2f;
     display: block;
     text-align: center;
+    margin-top: 100px;
 }
