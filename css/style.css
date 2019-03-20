@@ -405,13 +405,12 @@ header .menu a + a {
 }
 
 .aboutCompany .left {
-
     float: left;
-
+    width: 40%;
 }
 
 .aboutCompany .right {
-    width: calc(100% - 500px);
+    width: 60%;
     float: left;
     padding: 0 30px;
 }
@@ -431,7 +430,7 @@ header .menu a + a {
 }
 
 .aboutCompany .address {
-    padding-top: 65px;
+    padding-top: 75px;
 }
 
 .aboutCompany .address span {
@@ -463,11 +462,11 @@ header .menu a + a {
 }
 
 .aboutCompany .right p + p {
-    padding-top: 55px;
+    padding-top: 50px;
 }
 
 .aboutCompany .btnInfo {
-    padding-top: 77px;
+    padding-top: 70px;
 }
 
 .aboutCompany .right a {
@@ -495,9 +494,9 @@ header .menu a + a {
 }
 
 .aboutCompany img {
-    width: 220px;
-    height: 306px;
-    padding-top: 50px;
+    width: 235px;
+    height: 370px;
+    padding-top: 60px;
     padding-right: 25px;
 }
 
@@ -529,32 +528,32 @@ header .menu a + a {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    width: 50%;
     float: left;
     border-radius: 25px;
 }
 
 .plans .wrapper {
-    margin: 0 -30px;
     margin-top: 70px;
     padding-bottom: 100px;
 }
 
 .plans .plan1 {
-    margin: 0 -60px;
+    margin-left: 10px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 .plans .item {
+    width: 270px;
 border-radius: 25px 0  0 25px;
 }
 
 .plans div[class^="tarif"] {
+    width: 300px;
     border-radius:  0  25px 25px 0;
 }
 
 .plans .item,
 .plans div[class^="tarif"] {
-    width: 50%;
+    height: 510px;
     float: left;
     padding: 0 30px;
     padding-bottom: 30px;
@@ -562,7 +561,7 @@ border-radius: 25px 0  0 25px;
 
 .plans .plan2 {
     margin: 0 -30px;
-    margin-left: 90px;
+    margin-left: 35px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
@@ -603,7 +602,7 @@ border-radius: 25px 0  0 25px;
     letter-spacing: 0.025em;
     color: #ffffff;
     display: block;
-    padding-top: 220px;
+    padding-top: 165px;
 }
 
 .plans .item span:nth-child(3) {
@@ -624,6 +623,7 @@ border-radius: 25px 0  0 25px;
     padding: 0 30px;
     display: block;
     text-align: center;
+    text-transform: uppercase;
     margin-top: 30px;
 
 }
@@ -637,7 +637,7 @@ border-radius: 25px 0  0 25px;
 }
 
 .plans .block1 li {
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
 .plans [class^="tarif"] .block1 span:first-child {
@@ -667,11 +667,11 @@ border-radius: 25px 0  0 25px;
 }
 
 .plans .tarifplan1 .block2 {
-    padding-top: 65px;
+    padding-top: 40px;
 }
 
 .plans .tarifplan2 .block2 {
-    padding-top: 87px;
+    padding-top: 65px;
 }
 
 .plans .tarifplan2 .block1 span:last-child {
@@ -691,6 +691,7 @@ border-radius: 25px 0  0 25px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
+    padding-left: 5px;
 }
 
 .profit input,
@@ -701,11 +702,11 @@ border-radius: 25px 0  0 25px;
     margin-top: 15px;
     display: block;
     border-radius: 25px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .profit .plan select {
     height: 50px;
-    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .profit .amount,
@@ -725,7 +726,8 @@ border-radius: 25px 0  0 25px;
 .profit .plan select,
 .profit input {
     background-color: #5ed3dd;
-    padding: 0 30px;
+    padding: 0 40px;
+    border: 1px solid #f4f6f7;
 }
 
 .profit .sum span:first-child {
@@ -814,7 +816,7 @@ border-radius: 25px 0  0 25px;
     line-height: 40px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    padding-left: 30px;
+    padding-left: 40px;
     display: inline-block;
     padding-top: 30px;
 }
@@ -1023,7 +1025,7 @@ border-radius: 25px 0  0 25px;
 }
 
 .referral ul.table .img {
-    width: 21px;
+    width: 25px;
     height: 21px;
     color: #000000;
     background-repeat: no-repeat;
@@ -1398,11 +1400,8 @@ header .wrapper {
 
 .userInfo [class^="icon"] {
     font-size: 2em;
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
     color: #ffffff;
     float: left;
-    /*padding-right: 15px;*/
 }
 
 .userInfo .link2 {
@@ -1423,6 +1422,7 @@ header .wrapper {
     background-color: #000000;
     border-radius: 50%;
     padding: 15px;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.21)
 }
 
 .userInfo .balance .balanceImg span {
@@ -1432,10 +1432,12 @@ header .wrapper {
     background-color: #000000;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 .userInfo .balance .text {
-    padding: 20px 15px;
+    padding-top: 20px;
+    padding-left: 40px;
 }
 
 .userInfo .balance .text span:nth-child(1) {
@@ -1474,8 +1476,13 @@ float: left;
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
-    padding: 0 20px;
+    padding: 10px 30px;
     display: block;
+
+}
+
+.userInfo .btns span {
+    padding-right: 20px;
 }
 
 .userInfo .btns .btnColor1 {
@@ -1511,11 +1518,19 @@ float: left;
 .userInfo .info,
 .userInfo .balance,
 .userInfo .btns {
-    padding-left: 90px;
+    padding-left: 75px;
 }
 
 .navigation {
     width: 350px;
+}
+
+.navigation .point:first-child {
+    padding-top: 10px;
+}
+
+.navigation .point:last-child {
+    padding-bottom: 10px;
 }
 
 .navigation span {
@@ -1595,7 +1610,7 @@ header .deposit .text {
 
 header .deposit .item {
     float: left;
-    margin: 30px 45px;
+    margin: 20px 45px;
 }
 
 header .deposit {
@@ -1604,9 +1619,9 @@ header .deposit {
     display: table;
 }
 
-.deposit  .point {
-    display: table-row;
+.deposit  .point + .point {
     vertical-align: middle;
+    margin-top: 35px;
 }
 
 
@@ -1616,9 +1631,10 @@ header .deposit {
     text-align: left;
 }
 
-.deposit .item .point + .point * {
-    padding-top: 20px;
-}
+/*.deposit .item .point + .point > div {*/
+    /*padding-top: 20px;*/
+    /*vertical-align: middle;*/
+/*}*/
 
 header .deposit a {
     font-size: 15px;
@@ -1635,7 +1651,7 @@ header .deposit a {
     margin-top: 25px;
 }
 
-.deposit .point .img {
+.deposit .item .point .img {
     width: 42px;
     height: 35px;
     background-repeat: no-repeat;
@@ -1791,7 +1807,7 @@ header .deposit a {
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
-.content select {
+.content .dateRef select {
     background-color: #e6edf4;
     padding: 15px 430px 15px 15px;
     border-radius: 25px;
@@ -1811,7 +1827,7 @@ header .deposit a {
 .content .table1 li {
     display: table;
     width: 100%;
-    border: 1px solid #d0d2d3;
+    border-bottom: 1px solid #d0d2d3;
 }
 
 .content .table1 li span {
