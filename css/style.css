@@ -1714,6 +1714,7 @@ header .deposit a {
     background-color: #38a4ff;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+    padding: 10px 40px;
 }
 
 .comission {
@@ -1724,19 +1725,20 @@ header .deposit a {
     background-color: #11c0c5;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+    padding: 10px 40px;
 }
 
 .activeRef > div {
     background-color: #44d29d;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+    padding: 10px 40px;
 }
 
-.content .records .point{
+.content .records .point {
     width: 33.3333%;
     float: left;
-    padding: 10px 40px;
-    margin: 0 15px;
+    padding: 10px 20px;
 }
 
 .content .records {
@@ -1772,6 +1774,7 @@ header .deposit a {
     font-weight: 700;
     color: #202b2f;
     display: block;
+    padding-bottom: 10px;
 }
 
 .content form option {
