@@ -510,13 +510,15 @@ header .menu a + a {
 
 .plan1 .item {
     background-color: #3c9ef1;
-    background-position: bottom;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 
 .plan2 .item {
     background-color: #44d29d;
-    background-position: bottom;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 .plans [class^="tarif"] {
@@ -1400,6 +1402,7 @@ header .wrapper {
     /*background-position: center;*/
     color: #ffffff;
     float: left;
+    /*padding-right: 15px;*/
 }
 
 .userInfo .link2 {
@@ -1473,7 +1476,6 @@ float: left;
     color: #ffffff;
     padding: 0 20px;
     display: block;
-
 }
 
 .userInfo .btns .btnColor1 {
@@ -1708,33 +1710,37 @@ header .deposit a {
     color: #ffffff;
 }
 
-.comission {
+.comission > div {
     background-color: #38a4ff;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
-.referrals {
+.comission {
+    padding: 0 20px;
+}
+
+.referrals > div {
     background-color: #11c0c5;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
-.activeRef {
+.activeRef > div {
     background-color: #44d29d;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .content .records .point{
-    width: 30%;
+    width: 33.3333%;
     float: left;
     padding: 10px 40px;
     margin: 0 15px;
 }
 
 .content .records {
-    margin: 50px -40px 0;
+    margin: 50px -20px 0;
 }
 
 .content .refSignup {
