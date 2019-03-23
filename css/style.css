@@ -32,6 +32,19 @@ ul {
     clear: both;
 }
 
+a, button {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s ;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.7;
+}
+
 [class*="grad"] {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cff+0,1fe195+100 */
     background: #009cff; /* Old browsers */
@@ -225,7 +238,7 @@ header .menu a + a {
 
 /*main*/
 
-.menu .home {
+.menu a:hover {
     color: #1fe096;
 }
 
@@ -1584,7 +1597,7 @@ float: left;
 }
 
 
-.navigation .ref span {
+.navigation .ref span:hover {
     color: #3c9ef1;
 }
 
@@ -2046,7 +2059,7 @@ header .deposit a {
     margin-left: 20px;
 }
 
-.slider li:nth-child(3) span {
+.slider li:nth-child(3) span:hover {
     color: #ffffff;
     background-color: #1edf98;
     border-radius: 50%;
@@ -2054,8 +2067,7 @@ header .deposit a {
     padding: 15px 20px;
 }
 
-.slider li:nth-child(2) span,
-.slider li:nth-child(4) span {
+.slider li span {
 background-color: #ffffff;
     padding: 15px 20px;
     display: block;
