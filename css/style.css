@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -1287,7 +1289,7 @@ footer ul.menu li::before {
     background-color: #1fe096;
     border: 1px solid #1fe096;
     left: -35px;
-    top: 10px;
+    top: 15px;
 }
 
 footer .menu a {
