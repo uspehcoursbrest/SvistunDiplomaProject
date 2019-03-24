@@ -37,7 +37,7 @@ a, button {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s ;
+    transition: all 0.3s;
 }
 
 a:hover,
@@ -100,16 +100,15 @@ header .headWrap {
 }
 
 .topline {
-    padding-top: 36px;
+    padding-top: 25px;
 }
 
 .headWrap .logo {
-    width: 30%;
+    width: 31%;
 }
 
 .headWrap div + div {
     text-align: right;
-    padding: 0 14px;
 }
 
 .logo .text,
@@ -163,6 +162,11 @@ header .subscribe .btnColor1 {
 
 header .subscribe .btnColor2 {
     background-color: #44d29d;
+    margin-left: 15px;
+}
+
+.languages {
+    padding-left: 20px;
 }
 
 .languages .img {
@@ -180,7 +184,16 @@ header .social a {
     color: #000000;
     background-color: #ebf2f6;
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
+
+}
+
+header .social a + a {
+    margin-left: 10px;
+}
+
+header .topline .headWrap div + div {
+    margin-left: 50px;
 }
 
 header .date .clock {
@@ -195,6 +208,7 @@ header .date .clock {
 
 .date .day {
     display: inline-block;
+    padding-left: 15px;
 }
 
 .date .day span {
@@ -224,7 +238,7 @@ header .menu {
 
 header .menu a {
     font-size: 15px;
-    line-height: 60px;
+    line-height: 50px;
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -233,7 +247,7 @@ header .menu a {
 }
 
 header .menu a + a {
-    margin-left: 60px;
+    margin-left: 64px;
 }
 
 /*main*/
@@ -275,6 +289,7 @@ header .menu a + a {
     letter-spacing: 0.025em;
     color: #ffffff;
     text-align: right;
+    padding-top: 30px;
 }
 
 .getStarted .btnGrad1 {
@@ -297,7 +312,7 @@ header .menu a + a {
     background-color: #ffffff;
     margin-left: auto;
     margin-top: 73px;
-    width: 300px;
+    width: 310px;
     height: 330px;
     border-radius: 25px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
@@ -336,7 +351,7 @@ header .menu a + a {
     line-height: 24px;
     font-weight: 700;
     color: #19cf8b;
-
+    padding-left: 10px;
 }
 
 .start .currency span[class^="icon"] {
@@ -350,13 +365,12 @@ header .menu a + a {
 .start .advantages {
     display: table;
     margin-right: auto;
-    padding-bottom: 98px;
-    margin-top: 40px;
+    padding-bottom: 90px;
 }
 
 .start .advantages ul li,
 .start .advantages p {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .start .list li span:nth-child(2) {
@@ -406,8 +420,8 @@ header .menu a + a {
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
-    bottom: -90px;
-    right: -70px;
+    bottom: -110px;
+    right: -60px;
 }
 
 .aboutCompany {
@@ -416,18 +430,17 @@ header .menu a + a {
     background-size: cover;
     margin: 0 -25px;
     padding-top: 190px;
-    padding-bottom: 86px;
+    padding-bottom: 85px;
 }
 
 .aboutCompany .left {
     float: left;
-    width: 40%;
+    width: 44%;
 }
 
 .aboutCompany .right {
-    width: 60%;
+    width: 55%;
     float: left;
-    padding: 0 30px;
 }
 
 .aboutCompany {
@@ -445,7 +458,7 @@ header .menu a + a {
 }
 
 .aboutCompany .address {
-    padding-top: 75px;
+    padding-top: 65px;
 }
 
 .aboutCompany .address span {
@@ -467,6 +480,31 @@ header .menu a + a {
     vertical-align: middle;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation-name: iconAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes iconAnimation {
+    0% {
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+
 }
 
 .aboutCompany .right p {
@@ -477,7 +515,7 @@ header .menu a + a {
 }
 
 .aboutCompany .right p + p {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .aboutCompany .btnInfo {
@@ -499,7 +537,7 @@ header .menu a + a {
 
 .aboutCompany .right .btnColor1 {
     background-color: #03a3f4;
-    padding: 0 60px;
+    padding: 0 50px;
 }
 
 .aboutCompany .right .btnColor2 {
@@ -509,17 +547,17 @@ header .menu a + a {
 }
 
 .aboutCompany img {
-    width: 235px;
-    height: 370px;
-    padding-top: 60px;
-    padding-right: 25px;
+    width: 239px;
+    height: 355px;
+    padding-top: 55px;
+    padding-right: 15px;
 }
 
 .plans {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 .plan1 .item {
@@ -536,7 +574,7 @@ header .menu a + a {
 }
 
 .plans [class^="tarif"] {
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 .plans div[class^="plan"] {
@@ -548,7 +586,7 @@ header .menu a + a {
 }
 
 .plans .wrapper {
-    margin-top: 70px;
+    margin-top: 60px;
     padding-bottom: 100px;
 }
 
@@ -556,21 +594,22 @@ header .menu a + a {
     margin-left: 10px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
+
 .plans .item {
-    width: 270px;
-border-radius: 25px 0  0 25px;
+    width: 255px;
+    border-radius: 25px 0 0 25px;
 }
 
 .plans div[class^="tarif"] {
     width: 300px;
-    border-radius:  0  25px 25px 0;
+    border-radius: 0 25px 25px 0;
 }
 
 .plans .item,
 .plans div[class^="tarif"] {
     height: 510px;
     float: left;
-    padding: 0 30px;
+    padding: 0 20px;
     padding-bottom: 30px;
 }
 
@@ -597,6 +636,7 @@ border-radius: 25px 0  0 25px;
     letter-spacing: 0.025em;
     color: #202b2f;
     text-align: center;
+    padding-top: 20px;
 }
 
 .plans .item .captionLight {
@@ -617,12 +657,12 @@ border-radius: 25px 0  0 25px;
     letter-spacing: 0.025em;
     color: #ffffff;
     display: block;
-    padding-top: 165px;
+    padding-top: 180px;
 }
 
 .plans .item span:nth-child(3) {
     font-size: 17px;
-    line-height: 40px;
+    line-height: 30px;
     font-weight: 700;
     letter-spacing: 0.025em;
     color: #ffffff;
@@ -639,7 +679,7 @@ border-radius: 25px 0  0 25px;
     display: block;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
@@ -651,8 +691,12 @@ border-radius: 25px 0  0 25px;
     background-color: #44d29d;
 }
 
-.plans .block1 li {
-    padding-top: 35px;
+.plans .block1 li:first-child {
+    padding-top: 40px;
+}
+
+.plans .block1 li + li {
+    padding-top: 30px;
 }
 
 .plans [class^="tarif"] .block1 span:first-child {
@@ -696,8 +740,8 @@ border-radius: 25px 0  0 25px;
 .profit {
     background-color: #06aae9;
     vertical-align: middle;
-    padding-bottom: 60px;
-    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 25px;
 }
 
 .profit label {
@@ -722,6 +766,7 @@ border-radius: 25px 0  0 25px;
 
 .profit .plan select {
     height: 50px;
+    padding: 0 50px;
 }
 
 .profit .amount,
@@ -732,7 +777,10 @@ border-radius: 25px 0  0 25px;
 
 }
 
-.profit .plan,
+.profit .plan {
+    margin-left: 60px;
+}
+
 .profit .sum,
 .profit a {
     margin-left: 80px;
@@ -741,9 +789,13 @@ border-radius: 25px 0  0 25px;
 .profit .plan select,
 .profit input {
     background-color: #5ed3dd;
-    padding: 0 40px;
     border: 1px solid #f4f6f7;
 }
+
+.profit input {
+    padding: 0 40px;
+}
+
 
 .profit .sum span:first-child {
     font-size: 15px;
@@ -778,26 +830,31 @@ border-radius: 25px 0  0 25px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    padding-top: 105px;
+    padding-top: 80px;
 
 }
 
 .referral .wrapper {
-    margin-top: 75px;
+    margin-top: 115px;
     position: relative;
 }
 
 .referral .wrapper .item .img {
-    padding-left: 220px;
+    padding-left: 155px;
 }
 
 .referral .img .left,
 .referral .img .right {
     display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.55);
 }
 
 .referral .img .right {
-    margin-left: 470px;
+    margin-left: 375px;
 }
 
 .referral .captionDark {
@@ -817,7 +874,7 @@ border-radius: 25px 0  0 25px;
     letter-spacing: 0.025em;
     color: #ffffff;
     display: table;
-    margin-left: 100px;
+    margin-left: 150px;
     border-radius: 50%;
     padding: 5px 10px;
 }
@@ -831,7 +888,7 @@ border-radius: 25px 0  0 25px;
     line-height: 40px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    padding-left: 40px;
+    padding-left: 85px;
     display: inline-block;
     padding-top: 30px;
 }
@@ -848,7 +905,7 @@ border-radius: 25px 0  0 25px;
     text-transform: uppercase;
     display: block;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .referral .left span:last-child {
@@ -874,7 +931,7 @@ border-radius: 25px 0  0 25px;
     letter-spacing: 0.025em;
     color: #202b2f;
     text-align: center;
-    padding-top: 165px;
+    padding-top: 110px;
 }
 
 .referral a {
@@ -890,7 +947,7 @@ border-radius: 25px 0  0 25px;
     margin: auto;
     text-align: center;
     padding: 0 20px;
-    margin-top: 63px;
+    margin-top: 50px;
     width: 200px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
@@ -898,7 +955,7 @@ border-radius: 25px 0  0 25px;
 .referral .point {
     width: 20%;
     float: left;
-    padding: 0 25px;
+    padding: 0 20px;
 }
 
 .referral ul.clear {
@@ -910,22 +967,23 @@ border-radius: 25px 0  0 25px;
 .referral .lefttable {
     width: 47%;
     float: left;
+    height: 410px;
     border-radius: 25px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
 .referral .righttable {
-    width: 45%;
+    width: 47%;
     float: right;
+    height: 410px;
     border-radius: 25px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
-.referral .table.clear{
-    margin: 0 -15px;
+.referral .table.clear {
     margin-top: 72px;
     position: absolute;
-    bottom: -200px;
+    bottom: -170px;
 }
 
 .referral .point span:nth-child(2) {
@@ -935,12 +993,12 @@ border-radius: 25px 0  0 25px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-    padding-top: 43px;
+    padding-top: 30px;
 }
 
 .referral .point span:last-child {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 30px;
     letter-spacing: 0.05em;
     font-weight: 700;
     color: #202b2f;
@@ -952,12 +1010,11 @@ border-radius: 25px 0  0 25px;
 }
 
 
-
 .referral ul.table {
     background-color: #ffffff;
     display: table;
     width: 570px;
-    height: 415px;
+    /*height: 415px;*/
     padding: 30px;
     border-radius: 25px 25px 0 0;
 }
@@ -1051,13 +1108,13 @@ border-radius: 25px 0  0 25px;
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    padding-top: 300px;
+    padding-top: 240px;
 }
 
 .advantages .item span[class^="icon"] {
     font-size: 3em;
     display: inline-block;
-    margin-left: 140px;
+    margin-left: 150px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1098,20 +1155,20 @@ border-radius: 25px 0  0 25px;
 .advantages .item {
     width: 33.3333%;
     float: left;
-    padding: 82px 35px 0;
+    padding: 50px 35px 0;
 }
 
 .advantages .wrapper {
     margin: 0 -35px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
 }
 
 .news {
     background-position: 50% 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    padding-top: 97px;
-    padding-bottom: 120px;
+    padding-top: 70px;
+    padding-bottom: 125px;
 }
 
 .news .captionDark {
@@ -1125,6 +1182,7 @@ border-radius: 25px 0  0 25px;
     text-align: center;
 }
 
+
 .news .item span:nth-child(2) {
     font-size: 15px;
     line-height: 24px;
@@ -1132,7 +1190,7 @@ border-radius: 25px 0  0 25px;
     font-weight: 700;
     color: #03a3f4;
     text-align: left;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .news .item span:nth-child(3) {
@@ -1142,7 +1200,7 @@ border-radius: 25px 0  0 25px;
     font-weight: 700;
     color: #202b2f;
     text-align: left;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .news .item p {
@@ -1155,7 +1213,7 @@ border-radius: 25px 0  0 25px;
 
 .news .item a {
     font-size: 15px;
-    line-height: 40px;
+    line-height: 45px;
     letter-spacing: 0.05em;
     font-weight: 700;
     text-transform: uppercase;
@@ -1176,7 +1234,7 @@ border-radius: 25px 0  0 25px;
 }
 
 .news .item {
-    width: 30%;
+    width: 31%;
     float: left;
     background-color: #ffffff;
     padding-top: 40px;
@@ -1195,7 +1253,7 @@ border-radius: 25px 0  0 25px;
 }
 
 .news .wrapper {
-    margin: 0 -15px;
+    margin: 70px -15px 0;
 }
 
 .payments {
@@ -1205,7 +1263,7 @@ border-radius: 25px 0  0 25px;
 .payments .wrapper {
     display: table;
     width: 1200px;
-    height: 136px;
+    height: 138px;
 }
 
 .payments .wrapper li {
@@ -1231,7 +1289,7 @@ border-radius: 25px 0  0 25px;
 
 footer {
     background-color: #202b2f;
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 footer .wrapper .item {
@@ -1351,15 +1409,20 @@ footer .mail a {
 
 /*referrals*/
 
+header .logo.ref {
+    width: 22%;
+}
+
 header .social a.big {
     padding: 10px;
-    margin-left: 12px;
+    margin-left: 5px;
 }
 
 header .user .img {
     height: 32px;
     display: inline-block;
     background-repeat: no-repeat;
+    margin-left: 30px;
 }
 
 header .user .img,
@@ -1386,7 +1449,7 @@ header .user .text span:last-child {
     text-align: left;
 }
 
-header .headWrap  .btnColor1 {
+header .headWrap .btnColor1 {
     font-size: 12px;
     line-height: 30px;
     letter-spacing: 0.025em;
@@ -1395,7 +1458,8 @@ header .headWrap  .btnColor1 {
     color: #ffffff;
     background-color: #3c9ef1;
     display: block;
-    padding: 0 35px;
+    padding: 0 25px;
+    text-align: center;
 }
 
 header .wrapper {
@@ -1405,7 +1469,7 @@ header .wrapper {
 }
 
 .userInfo {
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .userInfo .info .point > div {
@@ -1459,6 +1523,7 @@ header .wrapper {
 .userInfo .link2 span {
     display: block;
 }
+
 .balanceImg {
     background-color: #000000;
     border-radius: 50%;
@@ -1501,7 +1566,7 @@ header .wrapper {
 
 .userInfo .balance .text,
 .userInfo .balance > .balanceImg {
-float: left;
+    float: left;
     vertical-align: middle;
 }
 
@@ -1512,7 +1577,7 @@ float: left;
 
 .userInfo .btns a {
     font-size: 15px;
-    line-height: 45px;
+    line-height: 30px;
     letter-spacing: 0.05em;
     font-weight: 700;
     text-decoration: none;
@@ -1557,21 +1622,24 @@ float: left;
 }
 
 .userInfo .info,
-.userInfo .balance,
+.userInfo .balance {
+    padding-left: 85px;
+}
+
 .userInfo .btns {
-    padding-left: 75px;
+    padding-left: 80px;
 }
 
 .navigation {
-    width: 350px;
+    width: 380px;
 }
 
 .navigation .point:first-child {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .navigation .point:last-child {
-    padding-bottom: 10px;
+    padding-bottom: 18px;
 }
 
 .navigation span {
@@ -1585,7 +1653,7 @@ float: left;
     text-transform: uppercase;
     color: #202b2f;
     vertical-align: middle;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .navigation span[class^="icon"] {
@@ -1597,7 +1665,7 @@ float: left;
 }
 
 
-.navigation .ref span:hover {
+.navigation span:hover {
     color: #3c9ef1;
 }
 
@@ -1618,25 +1686,25 @@ header .deposit .img1 {
 }
 
 header .navigation,
-header .deposit{
+header .deposit {
     float: left;
     padding: 0 20px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
-header .wrapper{
+header .wrapper {
     margin: 0 -20px;
 }
 
 header .navigation,
-header .deposit  {
+header .deposit {
     background-color: #ffffff;
-    margin-top: 30px;
+    margin-top: 40px;
     border-radius: 25px;
 }
 
 header .deposit {
-    background-color: rgba(252,253,254,0.87);
+    background-color: rgba(252, 253, 254, 0.87);
 }
 
 .content {
@@ -1651,7 +1719,11 @@ header .deposit .text {
 
 header .deposit .item {
     float: left;
-    margin: 20px 45px;
+    margin: 25px 30px;
+}
+
+header .deposit .item:last-child {
+    padding-left: 55px;
 }
 
 header .deposit {
@@ -1660,7 +1732,7 @@ header .deposit {
     display: table;
 }
 
-.deposit  .point + .point {
+.deposit .point + .point {
     vertical-align: middle;
     margin-top: 35px;
 }
@@ -1668,13 +1740,13 @@ header .deposit {
 
 .deposit .item .point > div {
     display: table-cell;
-    padding-left: 25px;
+    padding-left: 20px;
     text-align: left;
 }
 
 /*.deposit .item .point + .point > div {*/
-    /*padding-top: 20px;*/
-    /*vertical-align: middle;*/
+/*padding-top: 20px;*/
+/*vertical-align: middle;*/
 /*}*/
 
 header .deposit a {
@@ -1702,7 +1774,7 @@ header .deposit a {
     text-align: left;
 }
 
-.content .container > .captionDark {
+.content.ref .container > .captionDark {
     font-size: 30px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
@@ -1711,7 +1783,7 @@ header .deposit a {
     color: #202b2f;
     display: block;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .content .upline .captionDark {
@@ -1727,7 +1799,7 @@ header .deposit a {
 
 .content .upline span:last-child {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 10px;
     letter-spacing: 0.02em;
     font-weight: 600;
     color: #04a4f2;
@@ -1742,9 +1814,9 @@ header .deposit a {
     background-position: center;
     background-color: #ffffff;
     display: block;
-    margin: 55px auto 0;
+    margin: 25px auto 0;
     border-radius: 50%;
-    padding: 70px;
+    padding: 65px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
@@ -1771,7 +1843,7 @@ header .deposit a {
     background-color: #38a4ff;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
-    padding: 10px 40px;
+    padding: 10px 45px;
 }
 
 .comission {
@@ -1782,7 +1854,7 @@ header .deposit a {
     background-color: #11c0c5;
     border-radius: 50px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
-    padding: 10px 40px;
+    padding: 10px 43px;
 }
 
 .activeRef > div {
@@ -1795,7 +1867,7 @@ header .deposit a {
 .content .records .point {
     width: 33.3333%;
     float: left;
-    padding: 10px 20px;
+    padding: 0px 15px;
 }
 
 .content .records {
@@ -1804,7 +1876,7 @@ header .deposit a {
 
 .content .refSignup {
     font-size: 20px;
-    line-height: 83.73px;
+    /*line-height: 83.73px;*/
     letter-spacing: 0.025em;
     font-weight: 700;
     text-transform: uppercase;
@@ -1817,13 +1889,14 @@ header .deposit a {
 .content .item form {
     display: inline-block;
     width: 45%;
-    padding: 0 30px;
-    margin: 15px;
+}
 
+.content .item .dateRef > div {
+    padding: 23px 20px;
 }
 
 .content form + form {
-    margin-left: 35px;
+    margin-left: 85px;
 }
 
 .content .dateRef form label {
@@ -1846,6 +1919,7 @@ header .deposit a {
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
+    margin-top: 50px;
 }
 
 .content .dateRef select {
@@ -1856,7 +1930,7 @@ header .deposit a {
 }
 
 .content .table1 {
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 25px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
@@ -1919,8 +1993,8 @@ header .deposit a {
     padding-right: 75px;
 }
 
-.content .table1 li +li span:nth-child(2),
-.content .table1 li +li span:nth-child(3){
+.content .table1 li + li span:nth-child(2),
+.content .table1 li + li span:nth-child(3) {
     font-size: 15px;
     line-height: 50px;
     letter-spacing: 0.025em;
@@ -1936,16 +2010,16 @@ header .deposit a {
     color: #202b2f;
     display: block;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .content .table2 {
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
-.content .table2 li div{
+.content .table2 li div {
     width: 30%;
-   float: left;
+    float: left;
     padding: 5px 30px;
     margin: 0 10px;
 }
@@ -1960,8 +2034,8 @@ header .deposit a {
 
 
 .content .table2 li {
-    margin: 15px -12px;
-    padding: 10px 10px;
+    margin: 10px -12px;
+    padding: 5px 10px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.21);
 }
 
@@ -2018,15 +2092,16 @@ header .deposit a {
 
 .content .table2 li div:nth-child(4) {
     background-color: #44d29d;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 .content .table2 p {
     font-size: 15px;
-    line-height: 17px;
+    line-height: 30px;
     letter-spacing: 0.025em;
     color: #202b2f;
     background-color: #e6edf4;
+    padding-left: 95px;
 }
 
 .content .table .img {
@@ -2043,12 +2118,13 @@ header .deposit a {
     font-weight: 700;
     color: #202b2f;
 }
+
 .slider ul {
     text-align: center;
 }
 
 .slider li {
-    margin-top: 70px;
+    margin-top: 60px;
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
@@ -2056,10 +2132,10 @@ header .deposit a {
 }
 
 .slider li + li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
-.slider li:nth-child(3) span:hover {
+.slider li span:hover {
     color: #ffffff;
     background-color: #1edf98;
     border-radius: 50%;
@@ -2068,15 +2144,15 @@ header .deposit a {
 }
 
 .slider li span {
-background-color: #ffffff;
-    padding: 15px 20px;
+    background-color: #ffffff;
+    padding: 10px 15px;
     display: block;
     border-radius: 50%;
 }
 
 .slider .img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
