@@ -850,7 +850,22 @@ header .menu a + a {
     border-radius: 50%;
     width: 240px;
     height: 240px;
+    position: relative;
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.55);
+}
+
+.referral .img .left::before,
+.referral .img .right::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 35px solid rgba(51,51,51,0.05);
+    border-radius: 50%;
+    z-index: 1;
+    width: calc(100% + 150px);
+    height: calc(100% + 150px);
+    top: -75px;
+    left: -75px;
 }
 
 .referral .img .right {
@@ -1665,7 +1680,7 @@ header .wrapper {
 }
 
 
-.navigation span:hover {
+.navigation li:hover span {
     color: #3c9ef1;
 }
 
