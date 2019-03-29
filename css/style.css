@@ -2447,6 +2447,16 @@ header .deposit a {
         display: none;
     }
 
+    header .subscribe {
+        width: 40%;
+
+    }
+
+
+    header .topline .subscribe [class^="btn"] {
+        padding: 0 5px;
+    }
+
     .logo .img {
         width: 75px;
         height: 40px;
@@ -3213,7 +3223,7 @@ header .deposit a {
         display: block;
         border-radius: 25px;
         background-color: #1ede99;
-        margin-top: 20px;
+        margin: 20px 20px;
     }
 
     header .deposit .item {
@@ -3281,6 +3291,9 @@ header .deposit a {
         width: 48%;
     }
 
+    ul.navigation {
+        display: none;
+    }
 
 }
 
