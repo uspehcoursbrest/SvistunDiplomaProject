@@ -236,6 +236,10 @@ header .menu {
     margin-top: 30px;
 }
 
+header .menu1 {
+    display: none;
+}
+
 header .menu a {
     font-size: 15px;
     line-height: 50px;
@@ -850,7 +854,22 @@ header .menu a + a {
     border-radius: 50%;
     width: 240px;
     height: 240px;
+    position: relative;
     box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.55);
+}
+
+.referral .img .left::before,
+.referral .img .right::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 35px solid rgba(51,51,51,0.05);
+    border-radius: 50%;
+    z-index: 1;
+    width: calc(100% + 150px);
+    height: calc(100% + 150px);
+    top: -75px;
+    left: -75px;
 }
 
 .referral .img .right {
@@ -1346,6 +1365,7 @@ footer .copyrights {
     margin-top: 30px;
 }
 
+
 footer ul.menu li {
     position: relative;
 }
@@ -1630,6 +1650,10 @@ header .wrapper {
     padding-left: 80px;
 }
 
+select#navigation {
+    display: none;
+}
+
 .navigation {
     width: 380px;
 }
@@ -1665,7 +1689,7 @@ header .wrapper {
 }
 
 
-.navigation span:hover {
+.navigation li:hover span {
     color: #3c9ef1;
 }
 
@@ -2169,3 +2193,1103 @@ header .deposit a {
     text-align: center;
     margin-top: 100px;
 }
+
+@media (max-width: 1439px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 950px;
+    }
+
+    .headWrap .logo {
+        width: 20%;
+    }
+
+    header .menu a + a {
+        margin-left: 32px;
+    }
+
+    .start .caption span {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .start .caption p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .start {
+        padding-top: 50px;
+    }
+
+    .getStarted .textBlockLight {
+        padding-top: 20px;
+    }
+
+    .getStarted .btnGrad1 {
+        font-size: 17px;
+        line-height: 54px;
+    }
+
+    .graph .img {
+        width: 620px;
+        height: 396PX;
+    }
+
+    .aboutCompany img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .aboutCompany .right .btnColor1 {
+        padding: 0 25px;
+    }
+
+    .aboutCompany .right .btnColor2 {
+        margin-left: 10px;
+        padding: 0 15px;
+    }
+
+    .aboutCompany .right p + p {
+        padding-top: 10px;
+    }
+
+    .aboutCompany .right p {
+        line-height: 22px
+    }
+
+    .referral .img .left::before,
+    .referral .img .right::before {
+        display: none;
+    }
+
+    .plans .item {
+        width: 210px;
+    }
+
+    .plans div[class^="tarif"] {
+        width: 250px;
+    }
+
+    .plans .item .big {
+        font-size: 70px;
+    }
+
+    .plans .item .captionLight {
+        font-size: 20px;
+    }
+
+    .plans .item a {
+        padding: 0 10px;
+    }
+
+    .plans .tarifplan1 .block2 {
+        padding-top: 10px;
+    }
+
+    .plans .tarifplan2 .block2 {
+        padding-top: 35px;
+    }
+
+    .profit .plan {
+        margin-left: 20px;
+    }
+
+    .profit .sum, .profit a {
+        margin-left: 20px;
+    }
+
+
+    .profit .btnColor3 {
+        padding: 0 30px;
+    }
+
+    .profit input {
+        padding: 0 30px;
+    }
+
+    .referral .wrapper .item .img {
+        padding-left: 125px;
+    }
+
+    .referral .img .left, .referral .img .right {
+        width: 220px;
+        height: 220px;
+        box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.55);
+    }
+
+    .referral .img .number {
+        font-size: 100px;
+    }
+
+    .referral .img .right {
+        margin-left: 265px;
+    }
+
+    .referral .point {
+        padding: 0;
+    }
+
+    .referral .point span:last-child {
+        font-size: 25px;
+    }
+
+    .referral ul.table {
+        width: 470px;
+    }
+
+    .referral .lefttable > span {
+        width: 470px;
+    }
+
+    .referral .righttable > span {
+        width: 470px;
+    }
+
+    .advantages .item span[class^="icon"] {
+        margin-left: 105px;
+    }
+
+    .news .img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .news .item a {
+        margin: 35px 100px 45px 30px;
+    }
+
+    .payments .wrapper {
+        width: 950px;
+        height: 138px;
+    }
+
+    .payments img {
+        width: 110px;
+        height: 25px;
+    }
+
+    footer .wrapper .item + .item {
+        margin-left: 110px;
+    }
+
+    .userInfo .info, .userInfo .balance {
+        padding-left: 34px;
+    }
+
+    .balanceImg {
+        padding: 10px;
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.21);
+    }
+
+    .userInfo .balance .balanceImg span {
+        font-size: 3em;
+    }
+
+    .userInfo .btns {
+        padding-left: 30px;
+    }
+
+    .userInfo .balance .text, .userInfo .balance > .balanceImg {
+
+        float: left;
+        vertical-align: middle;
+
+    }
+
+    .userInfo .balance .text {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .navigation {
+        width: 260px;
+    }
+
+    header .deposit {
+        width: 660px;
+        margin-left: 25px;
+    }
+
+    header .deposit .item:last-child {
+        padding-left: 55px;
+    }
+
+    header .deposit .item {
+        margin: 25px 10px;
+    }
+
+    .content .dateRef select {
+        padding: 15px 310px 15px 15px;
+    }
+
+    .content .table2 li div {
+        width: 26%;
+        margin: 0 20px;
+    }
+
+}
+
+
+
+
+@media (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+
+    header .date {
+        display: none;
+    }
+
+    .logo .img {
+        width: 75px;
+        height: 40px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .logo .text span:first-child {
+        font-size: 18px;
+    }
+
+    .logo .text span:last-child {
+        letter-spacing: 0;
+    }
+
+    header .menu a {
+        display: none;
+    }
+
+    header .menu1  {
+        display: block;
+    }
+
+    header .menu1 select {
+        background-color: #3c9ef1;
+        border-radius: 25px;
+    }
+
+    .start .currency {
+        margin-left: 0;
+        float: right;
+    }
+
+    .start .advantages {
+        float: left;
+        margin-top: 50px;
+    }
+
+    .start .advantages ul li, .start .advantages p {
+        padding-top: 20px;
+    }
+
+    .graph {
+        display: none;
+    }
+
+    .aboutCompany img {
+        display: none;
+    }
+
+    .aboutCompany {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    .aboutCompany .left {
+        float: none;
+        width: 100%;
+    }
+
+    .aboutCompany .address {
+        display: none;
+    }
+
+    .aboutCompany .left .captionLight {
+
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .aboutCompany .right p {
+        display: block;
+        text-align: center;
+    }
+
+    .aboutCompany .right {
+        width: 100%;
+    }
+
+    .aboutCompany .right a {
+        line-height: 40px;
+        text-align: center;
+        margin-left: 150px;
+    }
+
+    .referral .img .left::before,
+    .referral .img .right::before {
+        display: none;
+    }
+
+    .plans .captionDark {
+        font-size: 20px;
+        line-height: 0;
+    }
+
+    .plans .plan1 {
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+
+    .plans .plan2 {
+        margin-left: 150px;
+    }
+
+    .plans .wrapper {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .profit .sum span:last-child {
+        font-size: 20px;
+    }
+
+    .profit .plan select {
+        padding: 0 20px;
+    }
+
+    .profit input {
+        padding: 0 15px;
+    }
+
+    .profit .btnColor3 {
+        padding: 0 15px;
+        line-height: 30px;
+    }
+
+    .profit .plan {
+        margin-left: 10px;
+    }
+
+    .referral .captionDark {
+        font-size: 20px;
+        line-height: 0;
+    }
+
+    .referral {
+        padding-top: 30px;
+        padding-bottom: 400px;
+    }
+
+    .referral .wrapper {
+        margin-top: 65px;
+    }
+
+    .referral .img .number {
+        font-size: 50px;
+        line-height: 5px;
+        padding-left: 65px;
+    }
+
+    .referral .img .percent {
+        font-size: 15px;
+        padding: 2px 5px;
+        margin-left: 100px;
+    }
+
+    .referral .img .left, .referral .img .right {
+        width: 150px;
+        height: 150px;
+    }
+
+    .referral .textBlockDark {
+        padding-top: 80px;
+    }
+
+    .referral .img .right {
+        margin-left: 215px;
+    }
+
+    .referral a {
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .referral .item [class^="icon"] {
+        font-size: 1em;
+    }
+
+    .referral ul.clear {
+        margin-top: 40px;
+    }
+
+    .referral .point span:nth-child(2) {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .referral .point span:last-child {
+        font-size: 15px;
+    }
+
+    .referral .point:nth-child(3) span:nth-child(2){
+        padding-top: 15px;
+    }
+
+    .referral .table.clear {
+        bottom: -550px;
+    }
+
+    .referral .lefttable {
+        margin-left: 150px;
+    }
+
+    .referral .righttable {
+        float: left;
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+
+    .advantages .captionLight {
+        font-size: 20px
+    }
+
+    .content > .advantages {
+        padding-top: 200px;
+    }
+
+    .advantages .item span[class^="icon"] {
+        margin-left: 80px;
+    }
+
+    .advantages .wrapper {
+        padding-bottom: 20px;
+    }
+
+    .advantages .item {
+        padding: 20px 35px 0;
+    }
+
+    .news {
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
+    .news .captionDark {
+        font-size: 20px;
+        line-height: 0;
+    }
+
+    .news .img {
+        width: 200px;
+        height: 180px;
+    }
+
+    .news .item * {
+        padding: 0 15px;
+    }
+
+    .news .item {
+        padding-top: 15px;
+    }
+
+    .news .item a {
+        margin: 25px 53px 15px 20px;
+        padding: 0 25px;
+    }
+
+    .news .item + .item {
+        margin-left: 15px;
+    }
+
+    .payments .wrapper {
+        width: 100%;
+        height: 88px;
+    }
+
+    .payments img {
+        width: 90px;
+        height: 25px;
+    }
+
+    footer .logo .text span:first-child {
+        font-size: 20px;
+    }
+
+    footer .logo .text span:nth-child(2) {
+        letter-spacing: 0;
+    }
+
+    footer .widgets {
+        margin-top: 35px;
+    }
+
+    footer .widgets a + a {
+        margin-left: 5px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .widgets a {
+        font-size: 14px;
+    }
+
+    footer .copyrights {
+        line-height: 24px;
+        letter-spacing: 0;
+        margin-top: 30px;
+    }
+
+    footer .menu a {
+        font-size: 14px;
+        line-height: 33px;
+    }
+
+    footer .wrapper .item + .item {
+        margin-left: 50px;
+    }
+
+    footer .address a {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    footer .mail span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .userInfo .img {
+        display: none;
+    }
+
+    .userInfo .balance > .balanceImg {
+        display: none;
+    }
+
+    .userInfo .balance .text span:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .userInfo .btns a {
+        line-height: 25px;
+        padding: 10px 20px;
+    }
+
+    .userInfo [class^="icon"] {
+        font-size: 1.5em;
+    }
+
+    .userInfo .info, .userInfo .balance {
+        padding-left: 50px;
+    }
+
+    .userInfo .info .point:last-child {
+        padding-top: 20px;
+    }
+
+    .navigation span[class^="icon"] {
+        font-size: 1em;
+    }
+
+    .navigation span {
+        line-height: 50px;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+    header .deposit .item:last-child {
+        padding-left: 5px;
+    }
+
+    header .deposit {
+        width: 535px;
+        margin-left: 15px;
+    }
+
+    .navigation {
+        width: 200px;
+    }
+
+    header .navigation, header .deposit {
+
+        float: left;
+        padding: 0 10px;
+    }
+
+    header .deposit .item {
+        margin: 25px 5px;
+    }
+
+    .deposit .item .point > div {
+        padding-left: 5px;
+    }
+
+    .deposit .point + .point {
+        margin-top: 15px;
+    }
+
+    .content.ref .container > .captionDark {
+        font-size: 20px;
+        line-height: 0;
+    }
+
+    .content .records .point {
+        width: 33%;
+        padding: 0px 5px;
+    }
+
+    .content .records span:first-child {
+        font-size: 14px;
+    }
+
+    .content .refSignup {
+        font-size: 20px;
+        padding-top: 35px;
+    }
+
+    .comission > div {
+        padding: 5px 25px;
+    }
+
+    .content .records {
+        margin: 30px 0px 0;
+    }
+
+    .referrals > div {
+        padding: 5px 43px;
+    }
+
+    .activeRef > div {
+        padding: 5px 40px;
+    }
+
+    .content form + form {
+        margin-left: 55px;
+    }
+
+    .content .dateRef select {
+        padding: 15px 200px 15px 15px;
+    }
+
+    .content .table2 li {
+        margin: 10px 0;
+    }
+
+    .content .table2 li div {
+        width: 30%;
+        margin: 5px 3px;
+    }
+
+    .slider li {
+        margin-top: 20px;
+    }
+
+    .content .copyrights {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    header .social {
+        display: none;
+    }
+
+    .headWrap .logo {
+        width: 30%;
+    }
+
+    .topline {
+        padding-top: 15px;
+    }
+
+    .start .caption span {
+        font-size: 18px;
+    }
+
+    .start {
+        padding-top: 20px;
+    }
+
+    .start .caption p {
+        font-size: 14px;
+    }
+
+    .getStarted .textBlockLight {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .getStarted .btnGrad1 {
+        font-size: 14px;
+        line-height: 25px;
+        margin-left: calc(100% - 220px);
+        margin-top: 20px;
+        padding: 0 34px;
+    }
+
+    .start .currency {
+        margin-right: 80px;
+        margin-top: 23px;
+    }
+
+    .start .currency span[class^="icon"] {
+        display: none;
+    }
+
+    .start .currency li {
+        padding: 5px 65px;
+    }
+
+    .start .currency {
+        height: 270px;
+    }
+
+    .start .list li span:first-child {
+        font-size: 1em;
+    }
+
+    .start .advantages {
+        margin-top: 20px;
+        margin-left: 70px;
+        padding-bottom: 20px;
+    }
+
+    .start .list li span:nth-child(2) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .aboutCompany .right p {
+        font-size: 14px;
+    }
+
+    .aboutCompany .right {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .aboutCompany {
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
+    .captionLight {
+        line-height: 25px;
+    }
+
+    .aboutCompany .right a {
+        margin-left: 10px;
+    }
+
+    .aboutCompany .btnInfo {
+        padding-top: 20px;
+    }
+
+    ul.list {
+        padding-left: 70px;
+    }
+
+    .referral .img .left::before,
+    .referral .img .right::before {
+        display: none;
+    }
+
+    .plans {
+        padding-top: 20px;
+    }
+
+    .plans .plan1 {
+        margin-left: 20px;
+    }
+
+    .plans .block1 li:first-child {
+        padding-top: 10px;
+    }
+
+    .plans [class^="tarif"] .block1 span:last-child {
+        font-size: 15px;
+    }
+
+    .plans .block1 li + li {
+        padding-top: 10px;
+    }
+
+    .plans .block2 {
+        line-height: 20px;
+    }
+
+    .plans .block1 li + li {
+        padding-top: 5px;
+    }
+
+    .plans .item .captionLight {
+        padding-top: 5px;
+    }
+
+    .plans .item .big {
+        font-size: 50px;
+        padding-top: 70px;
+    }
+
+    .plans .item, .plans div[class^="tarif"] {
+        height: 340px;
+    }
+
+    .plans .plan2 {
+        margin-left: 20px;
+    }
+
+    .amount input {
+        width: 100px;
+    }
+
+    .profit .plan {
+        margin-left: 20px;
+    }
+
+    .profit .btnColor3 {
+        display: block;
+        margin-top: 20px;
+        margin-left: 160px;
+        width: 150px;
+    }
+
+    .profit {
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .referral .wrapper .item .img {
+        padding-left: 40px;
+    }
+
+    .referral .img .right {
+        margin-left: 110px;
+    }
+
+    .referral .item [class^="icon"] {
+        display: none;
+    }
+
+    .referral ul.clear {
+        margin-top: 20px;
+    }
+
+    .referral ul:last-child {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .advantages .item span[class^="icon"] {
+        display: none;
+    }
+
+    .advantages .item {
+        width: 50%;
+        padding: 0 35px;
+    }
+
+    .advantages .item {
+        padding-top: 15px;
+    }
+
+    .advantages .item span:nth-child(2) {
+        padding-top: 10px;
+    }
+
+    .referral .point {
+        width: 30%;
+    }
+
+    .referral .point:first-child {
+    margin-left: 30px;
+    }
+
+    .referral .point:nth-child(4) {
+        margin-left: 100px;
+    }
+
+    .referral .lefttable {
+        margin-left: 10px;
+    }
+
+    .referral .lefttable {
+        width: 100%;
+    }
+
+    .referral .righttable {
+        margin-left: 10px;
+    }
+
+    .news {
+        display: none;
+    }
+
+.payments {
+    display: none;
+}
+
+    .content > .advantages {
+        padding-top: 150px;
+    }
+
+    .advantages .captionLight {
+        line-height: 60px;
+    }
+
+    .advantages .item span:nth-child(2) {
+        padding-top: 0px;
+    }
+
+    footer .wrapper .item:nth-child(2),
+    footer .wrapper .item:nth-child(3){
+        display: none;
+    }
+
+    footer .wrapper .item:first-child {
+        margin-left: 50px;
+    }
+
+    header .topline .headWrap .user {
+        display: none;
+    }
+
+    header .logo.ref {
+        width: 25%;
+    }
+
+    .content .upline .img {
+        display: none;
+    }
+
+    header .headWrap .btnColor1 {
+        padding: 0 5px;
+        margin-left: 50px;
+    }
+
+    .userInfo .balance {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    [class^="icon"] {
+        font-size: 1em;
+    }
+
+     .userInfo .balance {
+        padding-left: 10px;
+    }
+
+    .userInfo .btns a {
+        padding: 5px 20px;
+        margin-top: 20px;
+    }
+
+    .userInfo .info  {
+        padding-left: 50px;
+    }
+
+    ul.navigation {
+        display: none;
+    }
+
+    select#navigation {
+        display: block;
+        border-radius: 25px;
+        background-color: #1ede99;
+        margin-top: 20px;
+    }
+
+    header .deposit .item {
+        float: none;
+        padding-left: 20px;
+    }
+
+    header .deposit {
+        width: 315px;
+        margin-left: 105px;
+    }
+
+    .userInfo [class^="icon"] {
+        display: none;
+    }
+
+    .userInfo .btns .btnColor1,
+    .userInfo .btns .btnColor2 {
+        float: left;
+        margin-left: 50px;
+    }
+
+    .userInfo .btns .btnColor2 {
+        margin-top: 20px;
+    }
+
+    header .deposit a {
+        line-height: 35px;
+        margin-top: 15px;
+    }
+
+    .content .records .point {
+        width: 50%;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+
+    .content .item .dateRef > div {
+        margin-left: 70px;
+    }
+
+    .content .item form {
+        width: 100%;
+    }
+
+    .content form + form {
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+
+    .content .yourRef {
+        margin-top: 20px;
+    }
+
+    .content .table2 {
+        margin-top: 20px;
+    }
+
+    .content .table2 li .textBlockDark {
+        width: 80%;
+        margin: 2px 2px;
+    }
+
+    .content .table2 li div {
+        width: 48%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
