@@ -23,7 +23,6 @@ window.onload = function () {
         timer = setInterval(clock, 60000);
         clock();
     }
-
     clockStart();
 
 }

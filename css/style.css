@@ -1768,11 +1768,6 @@ header .deposit {
     text-align: left;
 }
 
-/*.deposit .item .point + .point > div {*/
-/*padding-top: 20px;*/
-/*vertical-align: middle;*/
-/*}*/
-
 header .deposit a {
     font-size: 15px;
     line-height: 45px;
@@ -3061,6 +3056,7 @@ header .deposit a {
 
     .aboutCompany img {
         padding-top: 15px;
+        height: 280px;
     }
 
     .plans div[class^="tarif"] {
@@ -3082,6 +3078,10 @@ header .deposit a {
     .referral .img .left::before,
     .referral .img .right::before {
         display: none;
+    }
+
+    .referral .point span:nth-child(2) {
+        color: #3c9ef1;
     }
 
     .plans {
@@ -3224,8 +3224,6 @@ header .deposit a {
         margin-left: 10px;
     }
 
-
-
     .news {
         display: none;
     }
@@ -3260,7 +3258,7 @@ header .deposit a {
     }
 
     header .logo.ref {
-        width: 25%;
+        width: 27%;
     }
 
     .content .upline .img {
@@ -3270,6 +3268,7 @@ header .deposit a {
     header .headWrap .btnColor1 {
         padding: 0 5px;
         margin-left: 50px;
+        margin-right: 10px;
     }
 
     .userInfo .balance {
@@ -3302,7 +3301,7 @@ header .deposit a {
         display: block;
         border-radius: 25px;
         background-color: #1ede99;
-        margin: 20px 20px;
+        margin: 20px 30px;
     }
 
     header .deposit .item {
@@ -3373,6 +3372,17 @@ header .deposit a {
     ul.navigation {
         display: none;
     }
+
+    .content .dateRef {
+        width: 90%;
+        margin-left: 25px;
+    }
+
+
+.content ul.table1 {
+    width: 90%;
+    margin-left: 25px;
+}
 
 }
 
