@@ -2503,8 +2503,8 @@ header .deposit a {
         display: none;
     }
 
-    .aboutCompany img {
-        margin-left: 50px;
+    .aboutCompany img:first-child {
+        margin-left: 75px;
     }
 
     .aboutCompany {
@@ -2532,6 +2532,7 @@ header .deposit a {
     .aboutCompany .right p {
         display: block;
         text-align: center;
+        margin-top: 20px;
     }
 
     .aboutCompany .right {
