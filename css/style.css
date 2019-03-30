@@ -2504,7 +2504,7 @@ header .deposit a {
     }
 
     .aboutCompany img {
-        display: none;
+        margin-left: 50px;
     }
 
     .aboutCompany {
@@ -2518,7 +2518,7 @@ header .deposit a {
     }
 
     .aboutCompany .address {
-        display: none;
+        margin-left: 150px;
     }
 
     .aboutCompany .left .captionLight {
