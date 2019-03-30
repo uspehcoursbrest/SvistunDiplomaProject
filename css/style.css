@@ -2207,6 +2207,11 @@ header .deposit a {
 
     .headWrap .logo {
         width: 20%;
+        padding-left: 10px;
+    }
+
+    .headWrap .social {
+        padding-right: 5px;
     }
 
     header .menu a + a {
@@ -2503,8 +2508,8 @@ header .deposit a {
         display: none;
     }
 
-    .aboutCompany img:first-child {
-        margin-left: 75px;
+    .aboutCompany .address a {
+        font-size: 3em;
     }
 
     .aboutCompany {
@@ -2515,10 +2520,12 @@ header .deposit a {
     .aboutCompany .left {
         float: none;
         width: 100%;
+        text-align: center;
     }
 
     .aboutCompany .address {
         margin-left: 150px;
+        padding-top: 45px;
     }
 
     .aboutCompany .left .captionLight {
@@ -2710,6 +2717,11 @@ header .deposit a {
 
     .news .item {
         padding-top: 15px;
+        width: 32%;
+    }
+
+    .news .wrapper {
+        margin: 30px 0 0;
     }
 
     .news .item a {
@@ -2767,7 +2779,7 @@ header .deposit a {
     }
 
     footer .wrapper .item + .item {
-        margin-left: 50px;
+        margin-left: 60px;
     }
 
     footer .address a {
@@ -2921,6 +2933,10 @@ header .deposit a {
         display: none;
     }
 
+    .headWrap div + div {
+        text-align: center;
+    }
+
     .headWrap .logo {
         width: 30%;
     }
@@ -2929,8 +2945,17 @@ header .deposit a {
         padding-top: 15px;
     }
 
+    header .menu1 select {
+        margin-left: 10px;
+    }
+
+    .start .caption {
+        padding-right: 10px;
+    }
+
     .start .caption span {
         font-size: 18px;
+
     }
 
     .start {
@@ -2939,19 +2964,22 @@ header .deposit a {
 
     .start .caption p {
         font-size: 14px;
+
     }
 
     .getStarted .textBlockLight {
         font-size: 14px;
         line-height: 20px;
+        padding-right: 10px;
     }
 
     .getStarted .btnGrad1 {
         font-size: 14px;
         line-height: 25px;
-        margin-left: calc(100% - 220px);
+        margin-left: calc(100% - 230px);
         margin-top: 20px;
         padding: 0 34px;
+        margin-right: 10px;
     }
 
     .start .currency {
@@ -2977,7 +3005,7 @@ header .deposit a {
 
     .start .advantages {
         margin-top: 20px;
-        margin-left: 70px;
+        margin-left: 50px;
         padding-bottom: 20px;
     }
 
@@ -3000,16 +3028,51 @@ header .deposit a {
         padding-bottom: 25px;
     }
 
+    .aboutCompany .left {
+        margin-left: 5px;
+    }
+
+    .aboutCompany .address {
+        padding-top: 35px;
+        margin-left: 50px;
+    }
+
     .captionLight {
         line-height: 25px;
     }
 
     .aboutCompany .right a {
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .aboutCompany .btnInfo {
         padding-top: 20px;
+    }
+
+    .aboutCompany .right {
+        width: 80%;
+        margin-left: 55px;
+    }
+
+    .aboutCompany .right .btnColor2 {
+        margin-left: 10px;
+        padding: 0 5px;
+    }
+
+    .aboutCompany img {
+        padding-top: 15px;
+    }
+
+    .plans div[class^="tarif"] {
+        width: 240px;
+    }
+
+    .plans .item, .plans div[class^="tarif"] {
+        height: 370px;
+    }
+
+    .aboutCompany .right .btnColor1 {
+        padding: 0 15px;
     }
 
     ul.list {
@@ -3059,7 +3122,7 @@ header .deposit a {
     }
 
     .plans .item, .plans div[class^="tarif"] {
-        height: 340px;
+        height: 370px;
     }
 
     .plans .plan2 {
@@ -3067,11 +3130,20 @@ header .deposit a {
     }
 
     .amount input {
-        width: 100px;
+        width: 79px;
+    }
+
+    .profit .wrapper {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .profit .sum, .profit a {
+        margin-left: 10px;
     }
 
     .profit .plan {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .profit .btnColor3 {
@@ -3112,8 +3184,8 @@ header .deposit a {
     }
 
     .advantages .item {
-        width: 50%;
-        padding: 0 35px;
+        width: 46%;
+        padding: 0 15px;
     }
 
     .advantages .item {
@@ -3124,12 +3196,16 @@ header .deposit a {
         padding-top: 10px;
     }
 
+    .advantages .wrapper {
+        margin-left: 5px;
+    }
+
     .referral .point {
         width: 30%;
     }
 
     .referral .point:first-child {
-    margin-left: 30px;
+    margin-left: 20px;
     }
 
     .referral .point:nth-child(4) {
@@ -3147,6 +3223,8 @@ header .deposit a {
     .referral .righttable {
         margin-left: 10px;
     }
+
+
 
     .news {
         display: none;

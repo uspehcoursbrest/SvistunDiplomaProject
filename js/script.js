@@ -3,7 +3,7 @@ window.onload = function () {
         var date = new Date(),
             day = date.getDate(),
             month = date.getMonth(),
-            monthArr = ["Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"],
+            monthArr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             year = date.getFullYear(),
             hour = date.getHours(),
             min = date.getMinutes();
@@ -12,8 +12,9 @@ window.onload = function () {
         if (hour < 10) hour = "0" + hour;
         if (min < 10) min = "0" + min;
 
-        document.getElementById("date").innerHTML = day + " " + monthArr[month] + " " + year;
+        document.getElementById("date").innerHTML = day + " " + monthArr[month];
         document.getElementById("time").innerHTML = hour + ":" + min;
+        document.getElementById("year").innerHTML = year;
     }
 
     var timer;
