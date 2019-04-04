@@ -399,6 +399,14 @@
 
     .profit .plan {
         margin-left: 10px;
+        bottom: -15px;
+    }
+    .profit .plan {
+        width: 200px;
+    }
+
+    .plan .selectric {
+        padding-left: 5px;
     }
 
     .referral .captionDark {
@@ -745,6 +753,11 @@
         width: 30%;
     }
 
+    .menu1 .selectric {
+        background-color: #3c9ef1;
+        width: 100px;
+    }
+
     .topline {
         padding-top: 15px;
     }
@@ -901,6 +914,10 @@
         margin-left: 20px;
     }
 
+    .plans .textBlockDark {
+        margin: 0 10px;
+    }
+
     .plans .block1 li:first-child {
         padding-top: 10px;
     }
@@ -948,12 +965,38 @@
     }
 
     .profit .sum, .profit a {
-        margin-left: 10px;
+        margin-left: 16px;
+    }
+
+    .selectric .button {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        background: none;
+        top: 50%;
+        right: 24px;
+        width: 9px;
+        height: 9px;
+        margin-top: -6px;
+        border-right: 2px solid #202b2f;
+        border-bottom: 2px solid #202b2f;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        color: #BBB;
+        text-align: center;
     }
 
     .profit .plan {
         margin-left: 10px;
+        width: 200px;
+        position: relative;
+        bottom: 2px;
+
     }
+
 
     .profit .btnColor3 {
         display: block;
@@ -1075,7 +1118,7 @@
     }
 
     header .headWrap .btnColor1 {
-        padding: 0 5px;
+        width: 65px;
         margin-left: 50px;
         margin-right: 10px;
     }

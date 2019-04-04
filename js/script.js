@@ -28,6 +28,12 @@ $(document).ready(function () {
 
         clockStart();
 
+        $('select').selectric();
+
     }
+
+
+
+
 
 })

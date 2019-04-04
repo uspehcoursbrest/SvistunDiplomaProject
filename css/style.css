@@ -783,7 +783,84 @@ header .menu a + a {
 
 .profit .plan {
     margin-left: 60px;
+    width: 265px;
+    position: relative;
+    bottom: -15px;
+
 }
+
+.plan .selectric {
+    width: 100%;
+    position: relative;
+    height: 46px;
+    margin-top: 10px;
+    line-height: 44px;
+    padding-left: 30px;
+    border-radius: 25px;
+    background-color: #5ed3dd;
+    border: 1px solid white;
+}
+
+.selectric-open .selectric-items {
+    display: block;
+    border-radius: 25px;
+}
+
+.selectric .button::after {
+    display: none;
+}
+
+.selectric-items li:hover {
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+.selectric .button {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background: none;
+    top: 50%;
+    right: 24px;
+    width: 9px;
+    height: 9px;
+    margin-top: -6px;
+    border-right: 2px solid #202b2f;
+    border-bottom: 2px solid #202b2f;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #BBB;
+    text-align: center;
+}
+
+.selectric .label {
+    margin: 0;
+    font-size: 15px;
+    line-height: 45px;
+    color: #000000;
+    display: block;
+    border-radius: 25px;
+}
+
+.selectric-scroll {
+    border-radius: 25px;
+}
+
+.selectric-scroll ul li {
+    font-size: 15px;
+    line-height: 45px;
+    color: #000000;
+    display: block;
+    background-color: #ffffff;
+    }
+
+li.selected.highlighted {
+    background-color: #ffffff;
+}
+
+
 
 .profit .sum,
 .profit a {
@@ -900,6 +977,10 @@ header .menu a + a {
 
 .referral .left span:first-child {
     background-color: #03a3f4;
+}
+
+.referral .textBlockDark {
+    margin: 0 10px;
 }
 
 .referral .img .number {
@@ -2188,6 +2269,8 @@ header .deposit a {
     text-align: center;
     margin-top: 100px;
 }
+
+
 
 
 
