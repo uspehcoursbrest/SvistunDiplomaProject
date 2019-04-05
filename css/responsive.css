@@ -237,7 +237,7 @@
         padding: 15px 310px 15px 15px;
     }
 
-    .content .table2 li div {
+    .content .table2 li .row div {
         width: 26%;
         margin: 0 20px;
     }
@@ -728,7 +728,7 @@
         margin: 10px 0;
     }
 
-    .content .table2 li div {
+    .content .table2 li .row div {
         width: 30%;
         margin: 5px 3px;
     }
@@ -1224,7 +1224,7 @@
         margin: 2px 2px;
     }
 
-    .content .table2 li div {
+    .content .table2 li .row div {
         width: 48%;
     }
 
@@ -1244,4 +1244,9 @@
     }
 
 }
+
+/*.accordion p {*/
+    /*max-height: 0;*/
+    /*overflow: hidden;*/
+/*}*/
 

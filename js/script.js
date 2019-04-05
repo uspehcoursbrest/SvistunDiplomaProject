@@ -38,16 +38,9 @@ $(document).ready(function () {
 
             $(this).siblings('div').stop().slideToggle(500);
 
-            // if ($(this).hasClass('active')) {
-            //     $(this).removeClass('active');
-            // } else {
-            //     $(this).addClass('active');
-            // }
+
         })
 
-        var btnUp = $('.up');
-
-        btnUp.hide();
 
     }
 
