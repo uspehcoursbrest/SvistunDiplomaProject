@@ -30,6 +30,25 @@ $(document).ready(function () {
 
         $('select').selectric();
 
+        var accord = $('.accordion');
+
+        accord.find('.img:not(.active)').siblings('div').slideUp();
+
+        accord.find('.img').on('click', function () {
+
+            $(this).siblings('div').stop().slideToggle(500);
+
+            // if ($(this).hasClass('active')) {
+            //     $(this).removeClass('active');
+            // } else {
+            //     $(this).addClass('active');
+            // }
+        })
+
+        var btnUp = $('.up');
+
+        btnUp.hide();
+
     }
 
 
