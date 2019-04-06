@@ -1974,6 +1974,8 @@ header .deposit a {
     margin: 50px -20px 0;
 }
 
+
+
 .content .refSignup {
     font-size: 20px;
     /*line-height: 83.73px;*/
@@ -2277,6 +2279,13 @@ header .deposit a {
     margin-top: 100px;
 }
 
+.navigation + .selectric-wrapper  {
+    display: none;
+}
+.dateRef .selectric {
+    border-radius: 25px;
+    padding: 0 20px;
+}
 
 
 
